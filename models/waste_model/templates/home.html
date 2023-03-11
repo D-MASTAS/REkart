@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Waste Classification</title>
+  </head>
+  <body>
+    <h1>Waste Classification</h1>
+    <form id="waste-form" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept="image/*" required>
+      <button type="submit">Classify</button>
+    </form>
+    <br>
+    <div id="result"></div>
+    <script>
+      const form = document.getElementById("waste-form");
+      const resultDiv = document.getElementById("result");
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        resultDiv.textContent = "Classifying...";
+
+        const formData = new FormData(event.target);
+        try {
+          const response = await fetch("/classifywaste", { method: "POST", body: formData });
+          const data = await response.json();
+          resultDiv.textContent = `The waste is ${data.predicted_value}.\n${data.details}`;
+        } catch (error) {
+          console.error(error);
+          resultDiv.textContent = "An error occurred while classifying the waste.";
+        }
+      });
+    </script>
+  </body>
+</html>
