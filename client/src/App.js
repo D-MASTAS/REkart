@@ -1,9 +1,17 @@
+import Announcement from "./components/Announcement"
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar"
+import Slider from "./components/Slider";
+
 function App() {
   return (
     <div className="App">
-       <h1 className="text-3xl font-bold">
-      Hello world!
-    </h1>
+     <Announcement/>
+    <Navbar/>
+<Slider/>
+<Footer/>
+
+
     </div>
   );
 }
