@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = () => {
   return (
 
-<nav className="bg-white shadow">
+<nav className="bg-sea_green-50">
   <div className="container mx-auto px-6 py-3 md:flex md:justify-between md:items-center">
     <div className="flex justify-between items-center">
       <div>
