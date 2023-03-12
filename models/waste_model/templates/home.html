@@ -21,13 +21,14 @@
         resultDiv.textContent = "Classifying...";
 
         const formData = new FormData(event.target);
-        try {
-          const response = await fetch("/classifywaste", { method: "POST", body: formData });
-          const data = await response.json();
-          resultDiv.textContent = `The waste is ${data.predicted_value}.\n${data.details}`;
-        } catch (error) {
-          console.error(error);
-          resultDiv.textContent = "An error occurred while classifying the waste.";
+        const response = await fetch("/classifywaste", { method: "POST", body: formData });
+        if (response.ok) {
+        const data = await response.json();
+        console.log(data);
+        resultDiv.textContent = `The waste is ${data}.\n`;
+        } 
+        else {
+        resultDiv.textContent = "An error occurred while classifying the waste.";
         }
       });
     </script>

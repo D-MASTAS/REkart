@@ -2,6 +2,7 @@ import tensorflow as tf
 import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.optimizers import Adam
+from flask import jsonify
 import cpuinfo
 
 output_class = ["cardboard", "e-waste", "glass", "medical", "metal", "paper", "plastic"]
@@ -67,5 +68,9 @@ def classify_waste(image_path):
     test_image = np.expand_dims(test_image, axis = 0)
     predicted_array = model.predict(test_image)
     predicted_value = output_class[np.argmax(predicted_array)]
-    print(predicted_value, data[predicted_value][0], data[predicted_value][1], data[predicted_value][2])
-    return predicted_value, data[predicted_value][0], data[predicted_value][1], data[predicted_value][2]
+    response_data = {
+        "predicted_value": [predicted_value],
+        "additional_data": [data[predicted_value][0], data[predicted_value][1], data[predicted_value][2]]
+    }
+    return response_data['predicted_value'], response_data['additional_data'][0], response_data['additional_data'][1], response_data['additional_data'][2]
+
