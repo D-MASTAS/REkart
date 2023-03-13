@@ -1,6 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { auth } from '../utils/Firebase'
 
 const Navbar = () => {
+
+  const [ login, setLogin ] = useState('Login');
+  const [ signup, setSignup ] = useState('Signup');
+
+  useEffect(() => {
+    const subscribe = auth.onAuthStateChanged((user) => {
+      if(user)
+      {
+        setLogin('LoggedIn');
+        setSignup('');
+      }
+    });
+  }, []);
+
+
   return (
 
 <nav className="bg-sea_green-50">
@@ -29,8 +45,8 @@ const Navbar = () => {
         <a className="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="#">Recycle</a>
         <a className="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="#">Policy</a>
         <a className="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="#">Feedback</a>
-        <a className="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="#">Login</a>
-        <a className="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="#">SignUp</a>
+        <a className="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="/login">{login}</a>
+        <a className="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="/signup">{signup}</a>
       </div>
 
       <div className="flex justify-center md:block">

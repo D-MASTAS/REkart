@@ -1,21 +1,21 @@
-import { BrowserRouter, Routes, Router } from 'react-router-dom'
-import Announcement from "./components/Announcement"
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar"
-import Product from "./components/Product";
-import Slider from "./components/Slider";
-function App(){
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
+import Home from './Pages/Home'
+import Login from './components/Login'
+import SignUp from './components/SignUp'
+
+function App() {
   return (
     <div className="App">
-     <Announcement/>
-    <Navbar/>
-<Slider/>
-<Product/>
-<Footer/>
-
-
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
+    </Router>
     </div>
   );
-
+  
   }
+
 export default App;
