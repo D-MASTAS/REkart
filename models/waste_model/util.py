@@ -9,26 +9,26 @@ output_class = ["cardboard", "e-waste", "glass", "medical", "metal", "paper", "p
 model = None
 data = {
     "cardboard":
-        ["Textile r",
-        "Bhi7S06pwv4", "IHPBJySIXZw"],
+        ["Textile",
+        "Reusable"],
     "e-waste":
         ["Electronic ",
-        "aUwFXDLOFO0","w0ikFMTuS9c"],
+        "Recycleable",],
     "glass":
-        ["Glass recycling ",
-        "bYVih298o1Y", "6R8YObQbE88"],
+        ["Glass",
+        "Recycleable"],
     "medical":
-        ["",
-        "GbE9C2tTW2k", "PkfX4sZwrQ4"],
+        ["Medical",
+        "Hazardous"],
     "metal":
-        ["S",
-        "qAGCI0-pQ3E", "rgEEXhbar3A"],
+        ["Metal",
+        "Recycleable"],
     "paper":
-        ["Papers",
-        "jAqVxsEgWIM", "xhW0RTg8kRI"],
+        ["Paper",
+        "Recycleable"],
     "plastic":
         ["Plastic ",
-        "rYwBL_6hB2I", "I_fUpP-hq3A"]
+        "Reusable"],
 }
 
 
@@ -70,7 +70,7 @@ def classify_waste(image_path):
     predicted_value = output_class[np.argmax(predicted_array)]
     response_data = {
         "predicted_value": [predicted_value],
-        "additional_data": [data[predicted_value][0], data[predicted_value][1], data[predicted_value][2]]
+        "additional_data": [data[predicted_value][0], data[predicted_value][1]]
     }
-    return response_data['predicted_value'], response_data['additional_data'][0], response_data['additional_data'][1], response_data['additional_data'][2]
+    return response_data['predicted_value'], response_data['additional_data'][0], response_data['additional_data'][1]
 
