@@ -1,7 +1,7 @@
 import openai
 import os
 
-API_KEY="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"
+API_KEY="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"
 os.environ['OPENAI_Key']=API_KEY
 
 class ChatApp:
