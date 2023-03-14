@@ -9,10 +9,16 @@ import Repurpose from './Pages/Repurpose'
 import Reuse from './Pages/Reuse'
 import Policy from './Pages/Policy'
 import Upload from './Pages/Upload'
+import Announcement from "./components/Announcement";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="App">
+       <Announcement />
+       <Navbar />
+     
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -27,7 +33,9 @@ function App() {
         <Route path="/upload" element={<Upload />} />
       </Routes>
     </Router>
+    <Footer />
     </div>
+  
   );
   
   }
