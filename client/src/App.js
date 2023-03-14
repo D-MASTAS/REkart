@@ -8,6 +8,7 @@ import Recycle from './Pages/Recycle'
 import Repurpose from './Pages/Repurpose'
 import Reuse from './Pages/Reuse'
 import Policy from './Pages/Policy'
+import Upload from './Pages/Upload'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/Reuse" element={<Reuse/>}/>
         <Route path="/Repurpose" element={<Repurpose/>}/>
         <Route path="/Shop" element={<Shop/>}/>
+        <Route path="/upload" element={<Upload />} />
       </Routes>
     </Router>
     </div>

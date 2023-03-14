@@ -3,10 +3,10 @@ import util
 import os
 import pymongo
 from werkzeug.utils import secure_filename
-
-
+from flask_cors import CORS
 
 application = Flask(__name__)
+cors = CORS(application)
 
 util.load_artifacts()
 
@@ -14,20 +14,13 @@ util.load_artifacts()
 # db = client["waste_classification"]
 # collection = db["predictions"]
 
-@application.route("/")
-def home():
-    return render_template("home.html")
-
-
-
-
 @application.route("/classifywaste", methods=["POST"])
 def classifywaste():
-    image_data = request.files["file"]
+    image_data = request.files["image"]
     image_path = secure_image_upload(image_data)
     predicted_value, category, description = util.classify_waste(image_path)
     os.remove(image_path)
-    return {"Data": ["predicted_value", "category", "description"]}
+    return {"Data": [predicted_value, category, description]}
 
 def secure_image_upload(image_data):
     filename = secure_filename(image_data.filename)
@@ -40,4 +33,4 @@ def get_image_directory_path():
 
 
 if __name__ == "__main__":
-    application.run(port=3000)
+    application.run()
