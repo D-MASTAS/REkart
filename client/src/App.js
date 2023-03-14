@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './Pages/Home'
 import Login from './components/Login'
 import SignUp from './components/SignUp'
-import Feedback from './Pages/Feedback'
+
 import Shop from './Pages/Shop'
 import Recycle from './Pages/Recycle'
 import Repurpose from './Pages/Repurpose'
