@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './Pages/Home'
 import Login from './components/Login'
 import SignUp from './components/SignUp'
-import Feedback from './Pages/Feedback'
 import Shop from './Pages/Shop'
 import Recycle from './Pages/Recycle'
 import Repurpose from './Pages/Repurpose'
@@ -12,6 +11,9 @@ import Upload from './Pages/Upload'
 import Announcement from "./components/Announcement";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+
+import Feedback from './Pages/Feedback'
+
 
 function App() {
   return (
@@ -31,6 +33,7 @@ function App() {
         <Route path="/Repurpose" element={<Repurpose/>}/>
         <Route path="/Shop" element={<Shop/>}/>
         <Route path="/upload" element={<Upload />} />
+        
       </Routes>
     </Router>
     <Footer />
