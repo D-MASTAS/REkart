@@ -3,6 +3,7 @@ import Home from './Pages/Home'
 import Login from './components/Login'
 import SignUp from './components/SignUp'
 import Upload from './Pages/Upload'
+import Feedback from './Pages/Feedback'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/upload" element={<Upload />} />
+        <Route path="/Feedback" element={<Feedback/>}/>
       </Routes>
     </Router>
     </div>
