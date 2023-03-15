@@ -4,15 +4,17 @@ import React from 'react'
 import Newsletter from "../components/Newsletter";
 import Product from "../components/Product";
 import Slider from "../components/Slider";
-function Home(){
+import Newsletter from "../components/Newsletter";
+
+const Home = () => {
   return (
-    <div className="App">
- 
-<Slider/>
-<Product/>
-<Newsletter/>
-
-
+    <div>
+    
+      <Slider />
+      <Product />
+      <Newsletter/>
+  
+      {/* <Footer /> */}
     </div>
   );
 
