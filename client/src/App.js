@@ -5,18 +5,18 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './Pages/Home'
 import Login from './components/Login'
 import SignUp from './components/SignUp'
+import Shop from './Pages/Shop'
+import Recycle from './Pages/Recycle'
+import Repurpose from './Pages/Repurpose'
+import Reuse from './Pages/Reuse'
+import Policy from './Pages/Policy'
+import Upload from './Pages/Upload'
 import Announcement from "./components/Announcement";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import Feedback from "./Pages/Feedback";
-import Policy from './Pages/Policy';
-import Recycle from "./Pages/Recycle"
-import Reuse from "./Pages/Reuse";
-import Repurpose from "./Pages/Repurpose";
-import Shop from "./Pages/Shop";
-import Upload from "./Pages/Upload";
 
-
+import Feedback from './Pages/Feedback'
+import Newsletter from "./components/Newsletter";
 
 function App() {
   return (

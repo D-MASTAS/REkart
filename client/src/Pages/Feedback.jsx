@@ -2,7 +2,9 @@ import React from 'react'
 
 const Feedback = () => {
   return (
-    <div><h1>HELLO</h1></div>
+    <div>
+   <div class="bg-zinc-500 h-50"></div>
+    </div>
   )
 }
 
