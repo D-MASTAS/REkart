@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
 import Feedback from './Pages/Feedback'
+import Newsletter from "./components/Newsletter";
 
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
         
       </Routes>
     </Router>
-    <Footer />
+    <Footer/>
     </div>
   
   );
