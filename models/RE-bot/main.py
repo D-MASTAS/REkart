@@ -1,7 +1,8 @@
 import openai
+import pickle
 
-openai.api_key = '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'
-
+openai.api_key = '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'
+prompt_list: list[str] = ['You are a environmental friendly bot helping people to know about eco-freindly ways to decompose wastes and recommend them eco-friendly product as alternatives of hazardous products.']
 
 def get_api_response(prompt: str) -> str | None:
     text: str | None = None
@@ -10,8 +11,8 @@ def get_api_response(prompt: str) -> str | None:
         response: dict = openai.Completion.create(
             model='text-davinci-003',
             prompt=prompt,
-            temperature=0.9,
-            max_tokens=100,
+            temperature=0.6,
+            max_tokens=50,
             top_p=1,
             frequency_penalty=0,
             presence_penalty=0.6,
@@ -44,26 +45,26 @@ def get_bot_response(message: str, pl: list[str]) -> str:
 
     if bot_response:
         update_list(bot_response, pl)
-        pos: int = bot_response.find('\nAI: ')
-        bot_response = bot_response[pos+1:]
+        pos: int = bot_response.find('AI: ')
+        bot_response = bot_response[pos+2:]
     else:
         bot_response = 'Something went wrong...'
 
     return bot_response
 
 
-def main():
-    prompt_list: list[str] = ['You are a environmental friendly bot helping people to know about eco-freindly ways to decompose wastes and recommend them eco-friendly product as alternatives of hazardous products.']
-
+def app():
+    Initializer='Bot: Hello,I am RE-bot,I am here to help with issues relate dto waste material and its management.'
+    print(f'{Initializer}')
     while True:
         user_input: str = input('You: ')
         response: str = get_bot_response(user_input, prompt_list)
-        print(f'Bot: {response}')
+        print(f'RE-bot : {response}')
 
 
-if __name__ == '__main__':
-    print('Bot: Hello,I am RE-bot,I am here to help with issues relate dto waste material and its management.')
-    main()
+if __name__=="__main__":
+    app()
+
 
 
 

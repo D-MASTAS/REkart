@@ -1,6 +1,7 @@
 
 import Product from "../components/Product";
 import Slider from "../components/Slider";
+import Newsletter from "../components/Newsletter";
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
       <Product />
       <Newsletter/>
   
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
