@@ -1,3 +1,5 @@
+
+import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
 import Home from './Pages/Home'
 import Login from './components/Login'
@@ -14,8 +16,6 @@ import Navbar from "./components/Navbar";
 
 import Feedback from './Pages/Feedback'
 import Newsletter from "./components/Newsletter";
-
-
 function App() {
   return (
     <div className="App">
