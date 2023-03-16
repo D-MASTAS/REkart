@@ -17,6 +17,7 @@ const Upload = () => {
     // Handle the form submission here
     const formData = new FormData();
     formData.append('image', file);
+    console.log(file);
     try {
       const response = await fetch('http://127.0.0.1:5000/classifywaste', {
         method: 'POST',
