@@ -8,7 +8,7 @@ import {RxDotFilled} from 'react-icons/rx';
 const Slider = () => {
 
     const slides = [
-      {url: 'Img1.png' },
+      {url: 'Carousel1.jpeg' },
       {url: 'Img2.png'},
     ];
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -26,8 +26,8 @@ const Slider = () => {
     setCurrentIndex(slideIndex);
   };
 
-  return (<div className='max-w-[2200px] h-[600px] w-full m-auto py-8 px-32 relative group '>
-    <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className=' w-full h-full rounded-2xl bg-center bg-cover duration-500'>
+  return (<div className='max-w-[1600px] h-[650px] w-full pt-8 m-auto relative group '>
+    <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className=' w-full h-full  bg-center bg-cover duration-500'>
       </div> 
       {/* left arrow */}
       <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'><BsChevronCompactLeft onClick={prevSlide} size={30}/></div>

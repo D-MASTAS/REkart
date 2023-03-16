@@ -1,44 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { auth } from '../utils/Firebase'
 
-const links = [
-  {
-    name: 'Home',
-    path: '/',
-  },
-  {
-    name: 'Shop',
-    path: '/shop',
-  },
-  {
-    name: 'Reuse',
-    path: '/Reuse',
-  },
-  {
-    name: 'Repurpose',
-    path: '/Repurpose',
-  },
-  {
-    name: 'Recycle',
-    path: '/Recycle',
-  },
-  {
-    name: 'Feedback',
-    path: '/Feedback',
-  },
-  {
-    name: 'Policy',
-    path: '/Policy',
-  },
-  {
-    name: 'Login',
-    path: '/Login',
-  },
-  {
-    name: 'SignUp',
-    path: '/SignUp',
-  },
-];
+
 const Navbar = () => {
 
   const [ login, setLogin ] = useState('Login');
@@ -60,10 +23,9 @@ const Navbar = () => {
 <nav className="bg-acapulco">
   <div className="container mx-auto px-6 py-3 md:flex md:justify-between md:items-center">
     <div className="flex justify-between items-center">
-      <div>
-        <a className="text-gray-800 text-xl font-bold md:text-2xl hover:text-gray-700" href="#">REkart</a>
-      </div>
-
+      
+    <a href="#" class="flex items-center">
+        <img src="logo1.png" class="h-6 mr-3 sm:h-10" alt="Flowbite Logo" /></a>
      
       <div className="flex md:hidden">
         <button type="button" className="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600" aria-label="toggle menu">
@@ -83,7 +45,7 @@ const Navbar = () => {
         <a className="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="/Repurpose">Repurpose</a>
         <a className="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="/Recycle">Recycle</a>
         <a className="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="/upload">Upload</a>
-        <a className="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="/Pages/Feedback">Feedback</a>
+        <a className="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="/Feedback">Feedback</a>
         <a className="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="/login">{login}</a>
         <a className="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="/signup">{signup}</a>
       </div>
