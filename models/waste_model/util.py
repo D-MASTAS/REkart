@@ -5,28 +5,28 @@ from tensorflow.keras.optimizers import Adam
 from flask import jsonify
 import cpuinfo
 
-output_class = ["cardboard", "e-waste", "glass", "medical", "metal", "paper", "plastic"]
+output_class = ["Cardboard", "E-waste", "Glass", "Medical", "Metal", "Paper", "Plastic"]
 model = None
 data = {
-    "cardboard":
+    "Cardboard":
         ["Textile",
         "Reusable"],
-    "e-waste":
+    "E-waste":
         ["Electronic ",
         "Recycleable",],
-    "glass":
+    "Glass":
         ["Glass",
         "Recycleable"],
-    "medical":
+    "Medical":
         ["Medical",
         "Hazardous"],
-    "metal":
+    "Metal":
         ["Metal",
         "Recycleable"],
-    "paper":
+    "Paper":
         ["Paper",
         "Recycleable"],
-    "plastic":
+    "Plastic":
         ["Plastic ",
         "Reusable"],
 }
