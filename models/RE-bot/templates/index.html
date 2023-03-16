@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+</head>
+<body>
+    <h1>Chatbot</h1>
+    <div>
+        <ul id="messages"></ul>
+    </div>
+    <form action="{{url_for('talk')}}"method="post" >
+        <input type="text" id="input-message" placeholder="Type your message...">
+        <button type="submit">Send</button>
+    </form>
+    {{ prediction_text }}
+    <script>
+        const form = document.querySelector('#message-form');
+        const input = document.querySelector('#input-message');
+        const messages = document.querySelector('#messages');
+
+        // Send message to server on form submission
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const message = input.value.trim();
+            if (message.length === 0) return;
+            addMessage('You', message);
+            input.value = '';
+            fetch('/chatbot', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ message: message })
+            })
+            .then(response => response.json())
+            .then(data => addMessage('Bot', data.message));
+        });
+
+        // Display received message
+        function addMessage(sender, message) {
+            const li = document.createElement('li');
+            li.textContent = `${sender}: ${message}`;
+            messages.appendChild(li);
+        }
+    </script>
+</body>
+</html>
