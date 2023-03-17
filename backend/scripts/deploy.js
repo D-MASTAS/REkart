@@ -5,23 +5,37 @@
 // will compile your contracts, add the Hardhat Runtime Environment's members to the
 // global scope, and execute the script.
 const hre = require("hardhat");
+const { items } = require("../utils/item.json")
+
+function tokens(n) {
+  return ethers.utils.parseEther(n.toString());
+}
+
 
 async function main() {
-  const currentTimestampInSeconds = Math.round(Date.now() / 1000);
-  const unlockTime = currentTimestampInSeconds + 60;
+  
+  const [deployer] = await ethers.getSigners();
 
-  const lockedAmount = hre.ethers.utils.parseEther("0.001");
+  const Rekart = await hre.ethers.getContractFactory("Rekart");
+  const rekart = await Rekart.deploy();
+  await rekart.deployed();
 
-  const Lock = await hre.ethers.getContractFactory("Lock");
-  const lock = await Lock.deploy(unlockTime, { value: lockedAmount });
+  console.log("Rekart deployed to:", rekart.address);
 
-  await lock.deployed();
+  for (let i = 0; i < items.length; i++) {
+    const transcation = await rekart.connect(deployer).list(
+      items[i].id,
+      items[i].name,
+      items[i].category,
+      items[i].image,
+      tokens(items[i].price),
+      items[i].rating,
+      items[i].stock,
+    )
+      await transcation.wait()
 
-  console.log(
-    `Lock with ${ethers.utils.formatEther(
-      lockedAmount
-    )}ETH and unlock timestamp ${unlockTime} deployed to ${lock.address}`
-  );
+      console.log(`Listed items ${items[i].id}: ${items[i].name}`)
+  }
 }
 
 // We recommend this pattern to be able to use async/await everywhere
