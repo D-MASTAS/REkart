@@ -59,6 +59,9 @@ module.exports = {
         },
         sea_green:{'50': '#5cd9c5',
       },
+      Sheen_green:{'50':'#74b394',
+
+      },
       },
     },
   },
