@@ -9,7 +9,7 @@ const Recycle = () => {
             <img
               className="h-1/2 w-full object-cover pl-4 pt-4 pb-4 pr-4 rounded-lg"
               src="Recycle.png"
-            />
+            ></img>
             <h2 className="mb-4 text-4xl tracking-tight font-medium text-center text-cascade-800">
               Recycle
             </h2>

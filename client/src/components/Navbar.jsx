@@ -21,11 +21,11 @@ const Navbar = () => {
   return (
 
 <nav className="bg-acapulco">
-  <div className="container mx-auto px-6 py-3 md:flex md:justify-between md:items-center">
+  <div className="container mx-auto px-8 py-3 md:flex md:justify-between md:items-center">
     <div className="flex justify-between items-center">
       
     <a href="#" class="flex items-center">
-        <img src="logo1.png" class="h-6 mr-3 sm:h-10" alt="Flowbite Logo" /></a>
+        <img src="logo1.png" class="h-6 mr-3 mx-5 sm:h-10" alt="Flowbite Logo" /></a>
      
       <div className="flex md:hidden">
         <button type="button" className="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600" aria-label="toggle menu">
