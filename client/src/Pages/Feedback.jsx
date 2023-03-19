@@ -5,31 +5,36 @@ const Feedback = () => {
     <div>
       <section>
       
-<div class="py-16 bg-white">  
-  <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+<div class="py-14 bg-white">  
+  <div class="container m-auto px-2 text-gray-600 md:px-12 xl:px-6">
       <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
         <div class="md:5/12 lg:w-5/12">
-          <img src="https://media.istockphoto.com/id/1210920931/photo/colleagues-working-at-recycling-center.jpg?s=612x612&w=0&k=20&c=l8TwkmYWRoz2MlybAXFXK8pSjs5qiVB2k_trFbM6JDI=" alt="" loading="lazy" class="h-80" ></img>
+          <img src="ABOUT US.png" alt="" ></img>
         </div>
         <div class="md:7/12 lg:w-6/12">
-          <h2 class="text-2xl text-gray-900 font-bold md:text-4xl">Nuxt development is carried out by passionate developers</h2>
-          <p class="mt-6 text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!</p>
-          <p class="mt-4 text-gray-600"> Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at? Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.</p>
+          <h2 class="text-3xl text-Sheen_green-50 mt-0 font-bold md:text-4xl py-4 ">ABOUT US</h2>
+          <p class="mt-1  text-gray-500 font-medium  space-1">We are just a bunch of college students trying to solve the Global environmental issues at the grass root level, to make our home, Planet Earth- a better place to live. We all are aware countries are trying to achieve net zero status in carbon emissions, to check the global warming and environmental degradation that follows it. Taking an analogy from the same concept of balancing net zero, we noticed that the contemporary manner of consumerism leaves a massive trail of waste that we have to deal with separately, being taken out of the producer-consumer cycle.</p>
+          <p class="mt-2 text-gray-500  font-medium space-1">In this model, not only net waste emission is high but a quantity of virgin raw materials has to be used by the producer to generate new goods.
+</p>
+          
         </div>
       </div>
   </div>
 </div> 
      
 <section class="w-full ">
-  <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-Sheen_green-50 text-center">Waste Increasing In The World</h1>
-<img src="arrow key.png"  class=" px-96 w-192 h-80 "alt=""></img>
+  <h1 class="font-bold text-3xl md:text-3xl lg:text-4xl font-heading text-Sheen_green-50 text-center py-5 ">Waste Increasing In The World</h1>
+<img src="arrow key.png"  class=" px-96 w-192 h-96 "alt=""></img>
 </section>
-
+<div ><h1 class="font-bold text-3xl md:text-3xl lg:text-4xl font-heading text-Sheen_green-50 text-center py-5">
+  OUR GOAL</h1>
+<p class=" mx-56  text-Sheen_green-50 font-medium lg:text-2xl lg:items-center">Our Goal at REKART is to ensure the implementation of these 5R principles from the grass root level, and to minimize the net waste emission from our planet.
+  </p></div>
 
 <section class="bg-white dark:bg-white-100">
     <div class="container px-6 py-10 mx-auto">
         <div class="text-center">
-            <h1 class="text-bold text-3xl md:text-4xl lg:text-5xl font-heading text-Sheen_green-50 text-center">Recent Blogs</h1>
+            <h1 class="font-bold text-3xl md:text-2xl lg:text-4xl font-heading text-gray-400 text-center"></h1>
 
             
         </div>
@@ -39,7 +44,7 @@ const Feedback = () => {
                 <img class="relative z-10 object-cover w-full rounded-md h-96" src="https://images.unsplash.com/photo-1644018335954-ab54c83e007f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt=""></img>
 
                 <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-Sheen_green-50">
-                    <a href="https://www.mapwaste.co.uk/environment/the-uks-problem-with-plastic-and-recyclin" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-2xl text-lg">
+                    <a href="https://www.mapwaste.co.uk/environment/the-uks-problem-with-plastic-and-recyclin" class="font-semibold text-mineral_green-900 hover:underline dark:text-white md:text-2xl text-lg">
                         The UK's problem with plastic and recycling
                     </a>
 
@@ -47,14 +52,14 @@ const Feedback = () => {
                     Plastic is a material that is used in many ways, from packaging to construction. However, there are environmental concerns around plastic use and commercial waste disposal, which has led to it being dubbed “the scourge of the earth.
                     </p>
 
-                    <p class="mt-3 text-lg text-gray-200">17th May 2022</p>
+                    <p class="mt-3 text-lg text-mineral_green-500">17th May 2022</p>
                 </div>
             </div>
             <div>
                 <img class="relative z-10 object-cover w-full rounded-md h-96" src="https://images.unsplash.com/photo-1644018335954-ab54c83e007f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt=""></img>
 
                 <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-Sheen_green-50">
-                    <a href="https://www.mapwaste.co.uk/news/dubais-zero-waste-2030" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-2xl text-lg">
+                    <a href="https://www.mapwaste.co.uk/news/dubais-zero-waste-2030" class="font-semibold text-mineral_green-900 hover:underline dark:text-white md:text-2xl text-lg">
                        Dubai's ambitious zero waste target and how it can achieved by 2030
                     </a>
 
@@ -62,14 +67,14 @@ const Feedback = () => {
                     The Vice President and Prime Minister of United Arab Emirates, HH Sheikh Mohammed bin Rashid Al Maktoum announced a ban on plastic bags in Dubai. The goal is to eliminate all single-use plastics from the Emirate by 2030. This is…
                     </p>
 
-                    <p class="mt-3 text-lg text-gray-200">28th February 2022</p>
+                    <p class="mt-3 text-lg text-mineral_green-500">28th February 2022</p>
                 </div>
             </div>
             <div>
                 <img class="relative z-10 object-cover w-full rounded-md h-96" src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt=""></img>
 
                 <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-Sheen_green-50">
-                    <a href="https://www.mapwaste.co.uk/news/fast-fashion-impact-waste-disposal-recycling" class="font-semibold text-gray-800 hover:underline dark:text-white md:text-xl text-lg">
+                    <a href="https://www.mapwaste.co.uk/news/fast-fashion-impact-waste-disposal-recycling" class="font-semibold text-mineral_green-900 hover:underline dark:text-white md:text-2xl text-lg">
                       What is fast fashion and it's impact on waste disposal and recycling
                     </a>
 
@@ -77,18 +82,20 @@ const Feedback = () => {
                     What is Fast Fashion Fast fashion is an industry term that refers to the trend of mass producing and then quickly selling fashionable merchandise for a low price. Fast fashion uses readily available materials and manufacturing processes to create new…
                     </p>
 
-                    <p class="mt-3 text-lg text-gray-200">10th February 2023</p>
+                    <p class="mt-3 text-lg text-mineral_green-500">10th February 2023</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<div class="line"></div>
 <section class="max-w-6xl mx-auto px-1 sm:px-2 lg: py-4">
     <div class="text-center pb-12">
        
-        <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-Sheen_green-50">
-            Our Team 
+        <h1 class="font-bold text-3xl md:text-3xl lg:text-4xl font-heading text-Sheen_green-50">
+             Team REKart
         </h1>
+        <p class="py-4 px-5 text-gray-400">We, Team REKart identified the issues in this model and constructed solutions for it, using the 5R principles. On our platform, We made it easier for the consumers to implement these principles, giving them detailed information in easy-to-follow steps & assisting them in donating reusable stuff in just a few clicks.</p>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-6 gap-6">
         <div class="w-full bg-white rounded-lg p5 flex flex-col justify-center items-center">
