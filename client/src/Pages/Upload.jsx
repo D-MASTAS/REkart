@@ -53,30 +53,30 @@ const Upload = () => {
 
   return (
     <div className="flex justify-even">
-      <div className="w-2/3 p-4">
+      <div className="w-1/2 mt-20 mb-20">
         {/* left panel - Model */}
         {/* <div className="w-full md:w-1/2 bg-gray-100 p-4 flex items-center justify-center"> */}
 
         <img
-          src="Green & Grey  Reduce, Reuse, Recycle Waste Instagram Post.png"
+          src="Upload.png"
           alt="Green Paper Texture We Support Zero Waste Instagram Story.svg"
-          className="mt-4 mr-6 max-w-md max-h-md"
+          className=" m-auto max-w-md max-h-md"
         />
 
         {/* </div> */}
         {/* your model code here */}
       </div>
-      <div className="w-1/3 p-4">
+      <div className="w-1/2 mt-40 mb-20">
         {/* right panel - Image preview */}
-        <h2 className="text-xl font-semibold mb-4">Image</h2>
+       {/*} <h2 className="text-xl font-semibold mb-4">Image</h2>*/}
         <form onSubmit={handleSubmit}>
           <label
             htmlFor="file-input"
-            className="block text-gray-700 font-bold mb-2"
+            className="block block-label text-gray-700 font-bold from-neutral-400 mb-2"
           >
-            Select an image:
+            Upload an Image to check:
           </label>
-          <div className="flex items-center justify-center w-40">
+          <div className="flex items-center justify-center m-auto pr-8 ">
             <label
               htmlFor="file-upload"
               className="flex flex-col items-center justify-center w-full px-4 py-6 bg-white text-blue rounded-lg shadow-md tracking-wide border border-blue cursor-pointer hover:bg-blue hover:text-white"
@@ -114,7 +114,7 @@ const Upload = () => {
           )}
           <button
             type="submit"
-            className="mt-4 px-4 py-2 bg-black text-white rounded-full font-semibold disabled:opacity-50"
+            className="mt-4 px-4 py-2 bg-acapulco-500 text-white rounded-full font-semibold disabled:opacity-50"
             disabled={!file}
           >
             Upload
