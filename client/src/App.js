@@ -1,6 +1,3 @@
-
-import React from 'react'
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
 import Home from './Pages/Home'
 import Login from './components/Login'
@@ -15,6 +12,7 @@ import Reuse from "./Pages/Reuse";
 import Repurpose from "./Pages/Repurpose";
 import Shop from "./Pages/Shop";
 import Upload from "./Pages/Upload";
+import Product from './Pages/Product';
 
 
 
@@ -34,7 +32,7 @@ function App() {
         <Route path="/Recycle" element={<Recycle/>}/>
         <Route path="/Reuse" element={<Reuse/>}/>
         <Route path="/Repurpose" element={<Repurpose/>}/>
-        <Route path="/Shop" element={<Shop/>}/>
+        <Route path="/product" element={<Product/>}/>
         <Route path="/upload" element={<Upload />} />
         
       </Routes>
