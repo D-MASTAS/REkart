@@ -14,7 +14,7 @@ import Shop from "./Pages/Shop";
 import Cart from "./Pages/Cart";
 import Product from "./Pages/Product";
 import Upload from "./Pages/Upload";
-
+import Cart from "./Pages/Cart";
 
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
         <Route path="/Recycle" element={<Recycle/>}/>
         <Route path="/Reuse" element={<Reuse/>}/>
         <Route path="/Repurpose" element={<Repurpose/>}/>
-        <Route path="/product" element={<Product/>}/>
+       <Route path="/Shop" element={<Shop/>}/>
         <Route path="/upload" element={<Upload />} />
         <Route path="/Cart" element={<Cart />}/>
       </Routes>
