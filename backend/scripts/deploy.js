@@ -5,6 +5,8 @@
 // will compile your contracts, add the Hardhat Runtime Environment's members to the
 // global scope, and execute the script.
 const hre = require("hardhat");
+const ethers = hre.ethers;
+
 const { items } = require("../utils/item.json")
 
 function tokens(n) {
@@ -28,13 +30,13 @@ async function main() {
       items[i].name,
       items[i].category,
       items[i].image,
+      items[i].carbonfootprint,
       tokens(items[i].price),
-      items[i].rating,
       items[i].stock,
     )
       await transcation.wait()
 
-      console.log(`Listed items ${items[i].id}: ${items[i].name}`)
+      console.log(`Listed items ${items[i].id}: ${items[i].name} : ${items[i].category} : ${items[i].price} : ${items[i].image} : ${items[i].carbonfootprint} : ${items[i].stock} : ${items[i].price}`)
   }
 }
 

@@ -2,83 +2,186 @@
     "items": [
       {
         "id": 1,
-        "name": "Camera",
-        "category": "electronics",
-        "image": "https://ipfs.io/ipfs/QmTYEboq8raiBs7GTUg2yLXB3PMz6HuBNgNfSZBx5Msztg/camera.jpg",
+        "name": "Wood pellets",
+        "category": "sawdust",
+        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "carbonfootprint": "16KG/GJ",
         "price": "1",
-        "rating": 4,
         "stock": 10
       },
       {
         "id": 2,
-        "name": "Drone",
-        "category": "electronics",
-        "image": "https://ipfs.io/ipfs/QmTYEboq8raiBs7GTUg2yLXB3PMz6HuBNgNfSZBx5Msztg/drone.jpg",
+        "name": "Particleboard",
+        "category": "sawdust",
+        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "carbonfootprint":"25KG/GJ" ,
         "price": "2",
-        "rating": 5,
         "stock": 6
       },
       {
         "id": 3,
-        "name": "Headset",
-        "category": "electronics",
-        "image": "https://ipfs.io/ipfs/QmTYEboq8raiBs7GTUg2yLXB3PMz6HuBNgNfSZBx5Msztg/headset.jpg",
+        "name": "Mulch",
+        "category": "sawdust",
+        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "carbonfootprint": "14KG/GJ",
         "price": "0.25",
         "rating": 2,
         "stock": 24
       },
       {
         "id": 4,
-        "name": "Shoes",
-        "category": "clothing",
-        "image": "https://ipfs.io/ipfs/QmTYEboq8raiBs7GTUg2yLXB3PMz6HuBNgNfSZBx5Msztg/shoes.jpg",
+        "name": "Animal bedding",
+        "category": "sawdust",
+        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "carbonfootprint": "70KG/GJ",
         "price": "0.25",
-        "rating": 5,
         "stock": 3
       },
       {
         "id": 5,
-        "name": "Sunglasses",
-        "category": "clothing",
-        "image": "https://ipfs.io/ipfs/QmTYEboq8raiBs7GTUg2yLXB3PMz6HuBNgNfSZBx5Msztg/sunglasses.jpg",
+        "name": "Fertilizer",
+        "category": "sawdust",
+        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "carbonfootprint": "9KG/GJ",
         "price": "0.10",
-        "rating": 4,
         "stock": 12
       },
       {
         "id": 6,
-        "name": "Watch",
-        "category": "clothing",
-        "image": "https://ipfs.io/ipfs/QmTYEboq8raiBs7GTUg2yLXB3PMz6HuBNgNfSZBx5Msztg/watch.jpg",
-        "price": "1.25",
-        "rating": 4,
-        "stock": 0
+        "name": "Bamboo Toothbrushes",
+        "category": "bamboo",
+        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "carbonfootprint": "0.2KG/GJ",
+        "price": "1",
+        "stock": 10
       },
       {
         "id": 7,
-        "name": "Puzzle Cube",
-        "category": "toys",
-        "image": "https://ipfs.io/ipfs/QmTYEboq8raiBs7GTUg2yLXB3PMz6HuBNgNfSZBx5Msztg/cube.jpg",
-        "price": "0.05",
-        "rating": 4,
-        "stock": 15
+        "name": "Cutting Boards",
+        "category": "bamboo",
+        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "carbonfootprint":"0.43KG/GJ" ,
+        "price": "2",
+        "stock": 6
       },
       {
         "id": 8,
-        "name": "Train Set",
-        "category": "toys",
-        "image": "https://ipfs.io/ipfs/QmTYEboq8raiBs7GTUg2yLXB3PMz6HuBNgNfSZBx5Msztg/train.jpg",
-        "price": "0.20",
-        "rating": 4,
-        "stock": 0
+        "name": "Kitchen Utensils",
+        "category": "bamboo",
+        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "carbonfootprint": "0.16KG/GJ",
+        "price": "0.25",
+        "rating": 2,
+        "stock": 24
       },
       {
         "id": 9,
-        "name": "Robot Set",
-        "category": "toys",
-        "image": "https://ipfs.io/ipfs/QmTYEboq8raiBs7GTUg2yLXB3PMz6HuBNgNfSZBx5Msztg/robots.jpg",
-        "price": "0.15",
-        "rating": 3,
+        "name": "Straws",
+        "category": "bamboo",
+        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "carbonfootprint": "0.05KG/GJ",
+        "price": "0.25",
+        "stock": 3
+      },
+      {
+        "id": 10,
+        "name": "Charcoal Air Purifier Bags",
+        "category": "bamboo",
+        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "carbonfootprint": "1.62KG/GJ",
+        "price": "0.10",
+        "stock": 12
+      },
+      {
+        "id": 11,
+        "name": "Kajal",
+        "category": "organic",
+        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "carbonfootprint": "1KG/GJ",
+        "price": "1",
+        "stock": 10
+      },
+      {
+        "id": 12,
+        "name": "Food Color",
+        "category": "organic",
+        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "carbonfootprint":"" ,
+        "price": "2",
+        "stock": 6
+      },
+      {
+        "id": 13,
+        "name": "Fertilizer",
+        "category": "organic",
+        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "carbonfootprint": "1.5KG/GJ",
+        "price": "0.25",
+        "rating": 2,
+        "stock": 24
+      },
+      {
+        "id": 14,
+        "name": "Plates",
+        "category": "organic",
+        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "carbonfootprint": "0.24KG/GJ",
+        "price": "0.25",
+        "stock": 3
+      },
+      {
+        "id": 15,
+        "name": "Cleaner",
+        "category": "organic",
+        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "carbonfootprint": "0.5KG/GJ",
+        "price": "0.10",
+        "stock": 12
+      },
+      {
+        "id": 16,
+        "name": "Cans",
+        "category": "scrapmetal",
+        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "carbonfootprint": "0.2KG/GJ",
+        "price": "1",
+        "stock": 10
+      },
+      {
+        "id": 17,
+        "name": "Wire",
+        "category": "scrapmetal",
+        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "carbonfootprint":"0.43KG/GJ" ,
+        "price": "2",
+        "stock": 6
+      },
+      {
+        "id": 18,
+        "name": "Nails",
+        "category": "scrapmetal",
+        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "carbonfootprint": "0.16KG/GJ",
+        "price": "0.25",
+        "rating": 2,
+        "stock": 24
+      },
+      {
+        "id": 19,
+        "name": "Casting",
+        "category": "scrapmetal",
+        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "carbonfootprint": "0.05KG/GJ",
+        "price": "0.25",
+        "stock": 3
+      },
+      {
+        "id": 20,
+        "name": "Fittings",
+        "category": "scrapmetal",
+        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "carbonfootprint": "1.62KG/GJ",
+        "price": "0.10",
         "stock": 12
       }
     ]

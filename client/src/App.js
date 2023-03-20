@@ -11,6 +11,8 @@ import Recycle from "./Pages/Recycle"
 import Reuse from "./Pages/Reuse";
 import Repurpose from "./Pages/Repurpose";
 import Shop from "./Pages/Shop";
+import Cart from "./Pages/Cart";
+import Product from "./Pages/Product";
 import Upload from "./Pages/Upload";
 
 

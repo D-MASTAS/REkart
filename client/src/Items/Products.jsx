@@ -14,6 +14,7 @@ const Products = ({ item, provider, account, rekart, togglePop }) => {
       .connect(signer)
       .buy(item.id, { value: item.cost });
     await transaction.wait();
+    console.log(transaction)
     const currentUnixTimestamp = Math.floor(Date.now() / 1000);
     const dateObj = new Date(currentUnixTimestamp * 1000); // convert Unix timestamp to JavaScript timestamp by multiplying with 1000
     const formattedDateString = dateObj.toLocaleDateString(undefined, {
@@ -42,16 +43,13 @@ const Products = ({ item, provider, account, rekart, togglePop }) => {
             <hr className="mb-6 bg-green-500" />
             <h2 className="mb-1">Overview</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
-              quia magnam placeat, ipsum natus, saepe odio tempora possimus
-              illum molestiae accusamus nihil neque aut excepturi, consectetur
-              aperiam nemo animi sit.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+              Minus quia magnam placeat, ipsum natus, saepe odio tempora  
+              possimus illum  molestiae accusamus nihil neque aut excepturi, 
+              consectetur aperiam nemo animi sit.
             </p>
           </div>
-          <div className="max-w-300 h-90 border-1 border-gray-400 pl-10 pr-20">
-            <h1>
-              {ethers.utils.formatUnits(item.cost.toString(), "ether")} ETH
-            </h1>
+          <div className="max-w-300 h-90 border-1 border-gray-400 pl-10 pr-10">
 
             <p>
               FREE delivery <br />
@@ -72,16 +70,10 @@ const Products = ({ item, provider, account, rekart, togglePop }) => {
               onClick={buyHandler}
               disabled={hasBought}
             >
-              Buy Now
+              Buy
             </button>
 
             <div class="text-sm">
-              <p class="text-green-500">
-                <small>Ships from</small> Rekart
-              </p>
-              <p class="text-green-500">
-                <small>Sold by</small> Rekart
-              </p>
               {hasBought && (
                 <div className="bg-gray-100 p-4 rounded-md">
                   <p className="font-medium mb-2">Item bought:</p>
