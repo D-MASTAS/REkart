@@ -8,7 +8,7 @@ import {RxDotFilled} from 'react-icons/rx';
 const Slider = () => {
 
     const slides = [
-      {url: 'Carousel1.jpeg' },
+      {url: 'Carousel1.png' },
       {url: 'Img2.png'},
     ];
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -26,7 +26,7 @@ const Slider = () => {
     setCurrentIndex(slideIndex);
   };
 
-  return (<div className='max-w-[1600px] h-[650px] w-full pt-8 m-auto relative group '>
+  return (<div className='max-w-[1600px] h-[650px] w-full m-auto relative group '>
     <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className=' w-full h-full  bg-center bg-cover duration-500'>
       </div> 
       {/* left arrow */}
