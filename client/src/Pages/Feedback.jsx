@@ -23,13 +23,16 @@ const Feedback = () => {
 </div> 
 <div class="flex ...">
 
-  <div class="flex-auto w-w/2  px-32 py-6">
-  <div class="md:7/12 lg:w-6/12">
+  <div class="flex w-w/2  px-32 py-6">
+  <div class="flex flex-col  ml:4 md:7/12 lg:w-6/12">
           <h2 class="text-3xl text-Sheen_green-50 mt-0 font-serif font-bold md:text-4xl py-4 animate-pulse">Our Vision</h2>
-          <p class="mb-3 text-gray-600 font-serif font-light content-center">We are just a bunch of college students trying to solve the Global environmental issues at the grass root level, to make our home, Planet Earth- a better place to live. We all are aware countries are trying to achieve net zero status in carbon emissions, to check the global warming and environmental degradation that follows it. Taking an analogy from the same concept of balancing net zero, we noticed that the contemporary manner of consumerism leaves a massive trail of waste that we have to deal with separately, being taken out of the producer-consumer cycle.</p>
-          <p class="mt-4 text-gray-600 font-serif font-light">In this model, not only net waste emission is high but a quantity of virgin raw materials has to be used by the producer to generate new goods.
+          <p class="mb-3 text-gray-600 dark:text-gray-400 font-serif font-light content-center">We are just a bunch of college students trying to solve the Global environmental issues at the grass root level, to make our home, Planet Earth- a better place to live. We all are aware countries are trying to achieve net zero status in carbon emissions, to check the global warming and environmental degradation that follows it. Taking an analogy from the same concept of balancing net zero, we noticed that the contemporary manner of consumerism leaves a massive trail of waste that we have to deal with separately, being taken out of the producer-consumer cycle.</p>
+          <p class="mt-4 text-gray-600 dark:text-gray-400 font-serif font-light">In this model, not only net waste emission is high but a quantity of virgin raw materials has to be used by the producer to generate new goods.
 We, Team REKART identified the issues in this model and constructed solutions for it, using the 5R principles. On our platform, We made it easier for the consumers to implement these principles, giving them detailed information in easy-to-follow steps & assisting them in donating reusable stuff in just a few clicks. </p>
         </div>
+  <div className="flex flex-col ml-16 py-12 md:5/12  lg:w-6/12 h-10/12">
+    <img src="visionnew.png" alt="" />
+    </div>      
   </div>
  
 </div>
@@ -39,19 +42,19 @@ We, Team REKART identified the issues in this model and constructed solutions fo
 
 <div ><h1 class="font-bold  font-serif text-3xl md:text-3xl lg:text-4xl font-heading text-Sheen_green-50 text-center py-3">
   Our Goal</h1>
-<p class=" mx-60 font-serif  text-lg   content-center  text-center lg:items-center  text-gray-600">Our Goal at REKart is to use the latest piece of technology such as blockchain and machine learning models to find innovative solutions to our environmental problems and to ensure the implementation of these 5R principles right from the grass root level. We believe that this technology-enabled approach will help us better tackle the existing environmental issues and to achieve our mission to minimize the net waste emission from our planet.
+<p class=" mx-60 font-serif  text-lg   content-center  text-center lg:items-center dark:text-gray-400  text-gray-600">Our Goal at REKart is to use the latest piece of technology such as blockchain and machine learning models to find innovative solutions to our environmental problems and to ensure the implementation of these 5R principles right from the grass root level. We believe that this technology-enabled approach will help us better tackle the existing environmental issues and to achieve our mission to minimize the net waste emission from our planet.
 
   </p></div>
 
-<section class="bg-white dark:bg-white-100">
+<section class=" bg-white dark:bg-white-100">
     <div class="container px-6 py-10 mx-auto">
         
 
-        <div class="grid grid-cols-1 gap-6 mt-4 lg:grid-cols-4  ">
-            <div class="hover:scale-110 duration-200  ">
-                <img class="relative z-10 object-cover w-full rounded-md h-96 " src="https://www.mapwaste.co.uk/wp-content/uploads/2020/03/bottle-tops-768x510.jpg" alt=""></img>
+        <div class=" grid grid-cols-1 gap-6 mt-4 lg:grid-cols-4  ">
+            <div class="hover:scale-105 duration-200  ">
+                <img class="relative z-0 object-cover w-full rounded-md h-96 " src="https://www.mapwaste.co.uk/wp-content/uploads/2020/03/bottle-tops-768x510.jpg" alt=""></img>
 
-                <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-Sheen_green-50">
+                <div class="relative z-0 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-Sheen_green-50">
                     <a href="https://www.mapwaste.co.uk/environment/the-uks-problem-with-plastic-and-recyclin" class="font-semibold text-mineral_green-900  dark:text-white md:text-2xl text-lg animate-pulse">
                         The UK's problem with plastic and recycling.What is the solution?
                     </a>
@@ -63,10 +66,10 @@ We, Team REKART identified the issues in this model and constructed solutions fo
                     <p class="mt-3 text-lg text-mineral_green-500">17th May 2022</p>
                 </div>
             </div>
-            <div class="hover:scale-110 duration-200">
-                <img class="relative z-10 object-cover w-full rounded-md h-96 " src="https://imgs.search.brave.com/doqXj1fdSkEmdyiJlBF1BaL0nXY411hfFggf5P2KGDk/rs:fit:960:540:1/g:ce/aHR0cHM6Ly9lY29j/eWNsZS5jb20uYXUv/d3AtY29udGVudC91/cGxvYWRzLzIwMTkv/MTEvV2h5LWRvLXdl/LXJlY3ljbGUtZS13/YXN0ZS5qcGc" alt=""></img>
+            <div class="hover:scale-105 duration-200">
+                <img class="relative z-0 object-cover w-full rounded-md h-96 " src="https://imgs.search.brave.com/doqXj1fdSkEmdyiJlBF1BaL0nXY411hfFggf5P2KGDk/rs:fit:960:540:1/g:ce/aHR0cHM6Ly9lY29j/eWNsZS5jb20uYXUv/d3AtY29udGVudC91/cGxvYWRzLzIwMTkv/MTEvV2h5LWRvLXdl/LXJlY3ljbGUtZS13/YXN0ZS5qcGc" alt=""></img>
 
-                <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-Sheen_green-50  ">
+                <div class="relative z-0 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-Sheen_green-50  ">
                     <a href="https://www.mapwaste.co.uk/environment/the-uks-problem-with-plastic-and-recyclin" class="font-semibold text-mineral_green-900  dark:text-white md:text-2xl text-lg animate-pulse">
                        How you can recycle old electricals to help the environment 
                     </a>
@@ -78,10 +81,10 @@ We, Team REKART identified the issues in this model and constructed solutions fo
                     <p class="mt-3 text-lg text-mineral_green-500">19th November 2022</p>
                 </div>
             </div>
-            <div class="hover:scale-110 duration-200">
-                <img class="relative z-10 object-cover w-full rounded-md h-96" src="https://www.mapwaste.co.uk/wp-content/uploads/2022/02/dubai-recycling.jpg" alt=""></img>
+            <div class="hover:scale-105 duration-200">
+                <img class="relative z-0 object-cover w-full rounded-md h-96" src="https://www.mapwaste.co.uk/wp-content/uploads/2022/02/dubai-recycling.jpg" alt=""></img>
 
-                <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-Sheen_green-50">
+                <div class="relative z-0 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-Sheen_green-50">
                     <a href="https://www.mapwaste.co.uk/news/dubais-zero-waste-2030" class="font-semibold text-mineral_green-900  dark:text-white md:text-2xl text-lg animate-pulse">
                        Dubai's ambitious zero waste target and how it can achieved by 2030
                     </a>
@@ -93,10 +96,10 @@ We, Team REKART identified the issues in this model and constructed solutions fo
                     <p class="mt-3 text-lg text-mineral_green-500">28th February 2022</p>
                 </div>
             </div>
-            <div class="hover:scale-110 duration-200">
-                <img class="relative z-10 object-cover w-full rounded-md h-96" src="https://www.mapwaste.co.uk/wp-content/uploads/2023/02/clothes-disposed.jpg" alt=""></img>
+            <div class="hover:scale-105 duration-200">
+                <img class="relative z-0 object-cover w-full rounded-md h-96" src="https://www.mapwaste.co.uk/wp-content/uploads/2023/02/clothes-disposed.jpg" alt=""></img>
 
-                <div class="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-Sheen_green-50">
+                <div class="relative z-0 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow dark:bg-Sheen_green-50">
                     <a href="https://www.mapwaste.co.uk/news/fast-fashion-impact-waste-disposal-recycling" class="font-semibold text-mineral_green-900  dark:text-white md:text-2xl text-lg animate-pulse">
                       What is fast fashion and it's impact on waste disposal and recycling
                     </a>
