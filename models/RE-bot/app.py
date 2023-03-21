@@ -9,6 +9,12 @@ def Home():
 
 @app.route("/chatbot",methods=['POST'])
 def talk():
+    Initializer='Bot: Hello,I am RE-bot,I am here to help with issues relate to waste material and its management.'
+    prompt_list: list[str] = ['You are a knowledged bot helping people to know about eco-freindly ways to decompose wastes and recommend them eco-friendly product as alternatives of hazardous products.']
+    while True:
+        user_input: str = request.form.values()
+        response: str = get_bot_response(user_input, prompt_list)
+        return render_template("index.html",prediction_text=response)
     # Initializer='Bot: Hello,I am RE-bot,I am here to help with issues relate to waste material and its management.'
     prompt_list: list[str] = ['You are a environmental friendly bot helping people to know about eco-freindly ways to decompose wastes and recommend them eco-friendly product as alternatives of hazardous products.']
     user_input = request.form.get('message')
