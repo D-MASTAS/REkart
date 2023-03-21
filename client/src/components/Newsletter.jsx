@@ -1,7 +1,12 @@
 import React from 'react'
+import react, {useState} from 'react';
 
 const Newsletter = () => {
+  const subscribe = ()=>{
+    
+  }
   return (
+    
     <div className="relative isolate overflow-hidden bg-sea_green-400 py-16 sm:py-24 lg:py-32 flex justify-center items-center ">
   <div className="mx-auto max-w-7xl px-6 lg:px-8">
     <div className="mx-auto lg:max-w-none lg:grid-cols-2">
