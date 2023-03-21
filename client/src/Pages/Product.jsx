@@ -45,13 +45,14 @@ const Product = () => {
       provider
     );
     setRekart(rekart);
+    
 
     const items = [];
     for (var i = 0; i < 20; i++) {
       const item = await rekart.items(i + 1);
+      console.log(item);
       items.push(item);
     }
-    // console.log(items);
     const sawdusts = items.filter(
       (items) => items.category === "sawdust"
     );
@@ -69,6 +70,11 @@ const Product = () => {
     setOrganic(organic);
     setBamboo(bamboo);
     setScrapMetal(scrapmetal);
+    // console.log(sawdust);
+    // console.log(organic);
+    // console.log(bamboo);
+    // console.log(scrapmetal);
+    console.log(items);
   };
 
   useEffect(() => {
