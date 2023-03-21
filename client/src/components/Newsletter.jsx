@@ -2,7 +2,7 @@ import React from 'react'
 
 const Newsletter = () => {
   return (
-    <div className="relative isolate overflow-hidden bg-off_white-100 py-16 sm:py-24 lg:py-32">
+    <div className="relative isolate overflow-hidden bg-white py-16 sm:py-24 lg:py-32">
   <div className="mx-auto max-w-7xl px-6 lg:px-8">
     <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 lg:max-w-none lg:grid-cols-2">
       <div className="max-w-xl lg:max-w-lg">
@@ -11,7 +11,7 @@ const Newsletter = () => {
         <div className="mt-6 flex max-w-md gap-x-4">
           <label for="email-address" className="sr-only">Email address</label>
           <input id="email-address" name="email" type="email" autocomplete="email" required className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-mineral_green-600 sm:text-sm sm:leading-6" placeholder="Enter your email"/>
-          <button type="submit" className="flex-none rounded-md bg-mineral_green-600 py-2.5 px-3.5 text-sm font-semibold text-white shadow-sm hover:bg-mineral_green-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mineral_green-600">Subscribe</button>
+          <button type="submit" className="flex-none rounded-md bg-mineral_green-600 py-2.5 px-3.5 text-sm font-semibold text-white shadow-sm hover:bg-mineral_green-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mineral_green-600 hover:scale-125">Subscribe</button>
         </div>
       </div>
       <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
