@@ -10,7 +10,7 @@ const NAME = "Bag"
 const CATEGORY = "Carrying"
 const IMAGE = "BAG"
 const COST = tokens(1)
-const RATING = 4
+const CARBONFOOTPRINT = "CARBONFOOTPRINT"
 const STOCK = 5
 
 describe("Rekart", () => {
@@ -37,7 +37,7 @@ describe("Rekart", () => {
 
     beforeEach(async () => {
       // List a item
-      transaction = await rekart.connect(deployer).list(ID, NAME, CATEGORY, IMAGE, COST, RATING, STOCK)
+      transaction = await rekart.connect(deployer).list(ID, NAME, CATEGORY, IMAGE, CARBONFOOTPRINT, COST, STOCK)
       await transaction.wait()
     })
 
@@ -48,8 +48,8 @@ describe("Rekart", () => {
       expect(item.name).to.equal(NAME)
       expect(item.category).to.equal(CATEGORY)
       expect(item.image).to.equal(IMAGE)
+      expect(item.carbonfootprint).to.equal(CARBONFOOTPRINT)
       expect(item.cost).to.equal(COST)
-      expect(item.rating).to.equal(RATING)
       expect(item.stock).to.equal(STOCK)
     })
 
@@ -63,7 +63,7 @@ describe("Rekart", () => {
 
     beforeEach(async () => {
       // List a item
-      transaction = await rekart.connect(deployer).list(ID, NAME, CATEGORY, IMAGE, COST, RATING, STOCK)
+      transaction = await rekart.connect(deployer).list(ID, NAME, CATEGORY, IMAGE, CARBONFOOTPRINT, COST, STOCK)
       await transaction.wait()
 
       // Buy a item
@@ -99,7 +99,7 @@ describe("Rekart", () => {
 
     beforeEach(async () => {
       // List a item
-      let transaction = await rekart.connect(deployer).list(ID, NAME, CATEGORY, IMAGE, COST, RATING, STOCK)
+      let transaction = await rekart.connect(deployer).list(ID, NAME, CATEGORY, IMAGE, CARBONFOOTPRINT, COST, STOCK)
       await transaction.wait()
 
       // Buy a item

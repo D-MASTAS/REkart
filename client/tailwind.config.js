@@ -4,8 +4,10 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    
     extend: {
+      animation: {
+        wiggle: 'wiggle 1s ease-in-out infinite',
+      },
       colors:{
         acapulco:{'50': '#C6E0D3',
           '100': '#B8D8C8',
@@ -63,8 +65,15 @@ module.exports = {
       Sheen_green:{'50':'#74b394',
 
       },
+      black:{
+        '50':'090A09'
+      },
       off_white:{
         '100':'#fff5e9',
+      },
+
+      green_logo:{
+        '50': '#52bf90'
       },
       sea_green: { '100': '#92C9BF',
       '200': '#80C0B4',

@@ -10,9 +10,10 @@ const Product = () => {
   const [account, setAccount] = useState(null);
   const [provider, setProvider] = useState(null);
   const [rekart, setRekart] = useState(null);
-  const [electroncis, setElectroncis] = useState(null);
-  const [clothing, setClothing] = useState(null);
-  const [toys, setToys] = useState(null);
+  const [sawdust, setSawdust] = useState(null);
+  const [organic, setOrganic] = useState(null);
+  const [bamboo, setBamboo] = useState(null);
+  const [scrapmetal, setScrapMetal] = useState(null);
   const [item, setItem] = useState({});
   const [toggle, setToggle] = useState(false);
 
@@ -39,49 +40,74 @@ const Product = () => {
     setProvider(provider);
 
     const rekart = new ethers.Contract(
-      "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "0x5FbDB2315678afecb367f032d93F642f64180aa3",
       ABI,
       provider
     );
     setRekart(rekart);
+    
 
     const items = [];
-    for (var i = 0; i < 9; i++) {
+    for (var i = 0; i < 20; i++) {
       const item = await rekart.items(i + 1);
+      console.log(item);
       items.push(item);
     }
-
-    const electroncis = items.filter(
-      (items) => items.category === "electronics"
+    const sawdusts = items.filter(
+      (items) => items.category === "sawdust"
     );
-    const clothing = items.filter((items) => items.category === "clothing");
-    const toys = items.filter((items) => items.category === "toys");
-    setElectroncis(electroncis);
-    setClothing(clothing);
-    setToys(toys);
+    const bamboo = items.filter(
+      (items) => items.category === "bamboo"
+    );
+    const organic = items.filter(
+      (items) => items.category === "organic"
+    );
+    const scrapmetal = items.filter(
+      (items) => items.category === "scrapmetal"
+    );
+   
+    setSawdust(sawdusts);
+    setOrganic(organic);
+    setBamboo(bamboo);
+    setScrapMetal(scrapmetal);
+    // console.log(sawdust);
+    // console.log(organic);
+    // console.log(bamboo);
+    // console.log(scrapmetal);
+    console.log(items);
   };
 
   useEffect(() => {
     load();
   }, []);
 
+
   return (
     <div>
       <Navigation account={account} setAccount={setAccount} />
-      {electroncis && clothing && toys && (
-        <>
+      {sawdust && organic && bamboo && scrapmetal && (
+       <>
           <Section
-            title={"Clothing & Jewelry"}
-            items={clothing}
+            title={"Sawdust"}
+            items={sawdust}
             togglePop={togglePop}
           />
           <Section
-            title={"Electronics & Gadgets"}
-            items={electroncis}
+            title={"Bamboo"}
+            items={bamboo}
             togglePop={togglePop}
           />
-          <Section title={"Toys & Gaming"} items={toys} togglePop={togglePop} />
-        </>
+          <Section
+            title={"Organic"}
+            items={organic}
+            togglePop={togglePop}
+          />
+          <Section
+            title={"Scrap Metal"}
+            items={scrapmetal}
+            togglePop={togglePop}
+          />
+          </>
       )}
 
       {toggle && (

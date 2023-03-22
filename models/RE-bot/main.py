@@ -1,11 +1,14 @@
 import openai
 import pickle
+from typing import Union
 
-openai.api_key = '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'
+openai.api_key = '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'
 
 
-def get_api_response(prompt: str) -> str | None:
-    text: str | None = None
+def get_api_response(prompt: str) -> Union[str, None]:
+    text: Union[str, None] = None
+    # function body
+
 
     try:
         response: dict = openai.Completion.create(

@@ -19,7 +19,7 @@ const Announcement = () => {
       <p className="text-sm leading-6 text-gray-900">
         <strong className="font-semibold">EcoVate</strong><svg viewBox="0 0 2 2" className="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Join us in the Journey to save environment!
       </p>
-      <a href="/SignUp" className="flex-none rounded-full bg-saphire_blue-100 py-1 px-3.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Sign Up <span aria-hidden="true">&rarr;</span></a>
+      <a href="#" className="flex-none rounded-full bg-saphire_blue-100 py-1 px-3.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Sign Up <span aria-hidden="true">&rarr;</span></a>
     </div>
     <div className="flex flex-1 justify-end">
       <button type="button" className="-m-3 p-3 focus-visible:outline-offset-[-4px]">
