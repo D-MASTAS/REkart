@@ -7,12 +7,12 @@ const Repurpose = () => {
         <div>
           <div class="flex">
   
-  <div class="flex-1 w-64 ... gap-2  py-12">
+  <div class="flex-1 w-64 ... gap-2 h-80  py-12">
    <img src="aboutus1.png" class="h-80 px-18" alt=""></img>
      </div>
   <div class="flex-1 w-32 hover:flex-1 ...">
    <h1 class="pt-20 pb-4 text-3xl text-gray-900  font-bold font-serif md:text-4xl  animate-pulse ">What is Repurposing?</h1>
-   <p class=" mr-10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit id repudiandae cupiditate officiis dolores ipsum obcaecati, rem nostrum deleniti non minus saepe quo adipisci fugiat, sunt vitae? Delectus, beatae veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt modi consequatur provident atque a inventore dicta temporibus, fugiat est praesentium omnis? Itaque veritatis corporis aliquid fugiat temporibus, alias quia possimus.</p>
+   <p class=" mr-10 font-light text-left text-gray-600 dark:text-gray-400 font-serif">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit id repudiandae cupiditate officiis dolores ipsum obcaecati, rem nostrum deleniti non minus saepe quo adipisci fugiat, sunt vitae? Delectus, beatae veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt modi consequatur provident atque a inventore dicta temporibus, fugiat est praesentium omnis? Itaque veritatis corporis aliquid fugiat temporibus, alias quia possimus.</p>
   </div>
 </div></div>
 <div>
@@ -20,7 +20,7 @@ const Repurpose = () => {
   
   <div class="flex-1 w-64 ... py-8 px-12">
   <h1 class="pt-20 pb-4 text-3xl text-gray-900  font-bold font-serif md:text-4xl  animate-pulse ">How it works?</h1>
-   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit id repudiandae cupiditate officiis dolores ipsum obcaecati, rem nostrum deleniti non minus saepe quo adipisci fugiat, sunt vitae? Delectus, beatae veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt modi consequatur provident atque a inventore dicta temporibus, fugiat est praesentium omnis? Itaque veritatis corporis aliquid fugiat temporibus, alias quia possimus.</p>
+   <p class="font-light text-left text-gray-600 dark:text-gray-400 font-serif">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit id repudiandae cupiditate officiis dolores ipsum obcaecati, rem nostrum deleniti non minus saepe quo adipisci fugiat, sunt vitae? Delectus, beatae veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt modi consequatur provident atque a inventore dicta temporibus, fugiat est praesentium omnis? Itaque veritatis corporis aliquid fugiat temporibus, alias quia possimus.</p>
      </div>
   <div class="flex-1 w-32 ...">
    <img src="Reuse.png"  class="h-80 px-10"alt=""></img>
@@ -28,8 +28,40 @@ const Repurpose = () => {
 </div></div>
     
     <section>
-      <h1 class="font-bold  font-serif text-3xl md:text-3xl lg:text-4xl font-heading text-gray-900 text-center py-12 animate-pulse"> Ways to repurpose different categories</h1>
      
+      <section class="dark:bg-gray-800 dark:text-gray-500">
+	<div class="container flex flex-col justify-center p-4 mx-auto md:p-8">
+		
+		<h2 class="font-bold  font-serif text-3xl md:text-3xl lg:text-4xl font-heading text-center pt-4 pb-8 ">Frequently Asked Questions</h2>
+		<div class="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
+			<details>
+				<summary class="py-2 outline-none cursor-pointer font-serif font-semibold text-sea_green-900">Optio maiores eligendi molestiae totam dolores similique?</summary>
+				<div class="px-4 pb-4">
+					<p class="font-light text-left text-gray-600 dark:text-gray-400 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde neque in fugiat magni, quas animi enim veritatis deleniti ex. Impedit.</p>
+				</div>
+			</details>
+      <details>
+				<summary class="py-2 outline-none cursor-pointer font-serif font-semibold text-sea_green-900">Optio maiores eligendi molestiae totam dolores similique?</summary>
+				<div class="px-4 pb-4">
+					<p class="font-light text-left text-gray-600 dark:text-gray-400 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde neque in fugiat magni, quas animi enim veritatis deleniti ex. Impedit.</p>
+				</div>
+			</details>
+			<details>
+				<summary class="py-2 outline-none cursor-pointer font-serif font-semibold text-sea_green-900">Modi dolorem veritatis culpa quos consequuntur beatae itaque excepturi perspiciatis?</summary>
+				<div class="px-4 pb-4">
+					<p class="font-light text-left text-gray-600 dark:text-gray-400 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aspernatur quae, eos explicabo odit minima libero veniam similique quibusdam doloribus facilis ipsa accusantium vel maiores corrupti! Libero voluptate a doloribus?</p>
+				</div>
+			</details>
+			<details>
+				<summary class="py-2 outline-none cursor-pointer font-serif font-semibold text-sea_green-900">Magni reprehenderit possimus debitis?</summary>
+				<div class="px-4 pb-4 space-y-2 ">
+					<p class="font-light text-left text-gray-600 dark:text-gray-400 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates aspernatur dolores in consequatur doloremque inventore reprehenderit, consequuntur perspiciatis architecto.</p>
+					<p>Sed consectetur quod tenetur! Voluptatibus culpa incidunt veritatis velit quasi cupiditate unde eaque! Iure, voluptatibus autem eaque unde possimus quae.</p>
+				</div>
+			</details>
+		</div>
+	</div>
+</section>
     </section>
     <section>
 <div class="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
