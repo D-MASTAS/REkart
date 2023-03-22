@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.9;
 
@@ -85,3 +86,5 @@ contract Rekart {
         require(success);
     }
 }
+=======
+>>>>>>> 5df843c7d05324fbfa95d653c2921260893781f8
