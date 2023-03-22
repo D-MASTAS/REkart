@@ -16,8 +16,8 @@ contract Rekart {
         string name;
         string category;
         string image;
+        string carbonfootprint;
         uint256 cost;
-        uint256 rating;
         uint256 stock;
     }
 
@@ -44,8 +44,8 @@ contract Rekart {
         string memory _name,
         string memory _category,
         string memory _image,
+        string memory _carbonfootprint,
         uint256 _cost,
-        uint256 _rating,
         uint256 _stock
     ) public onlyOwner {
         Item memory item = Item(
@@ -53,8 +53,8 @@ contract Rekart {
             _name,
             _category,
             _image,
+            _carbonfootprint,
             _cost,
-            _rating,
             _stock
         );
 
