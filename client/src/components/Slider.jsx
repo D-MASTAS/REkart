@@ -9,7 +9,7 @@ const Slider = () => {
 
     const slides = [
       {url: 'Carousel1.png' },
-      {url: 'Img2.png'},
+      {url: 'Carousel2.png'},
     ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const prevSlide = ()=> {

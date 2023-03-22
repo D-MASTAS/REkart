@@ -5,8 +5,6 @@
 // will compile your contracts, add the Hardhat Runtime Environment's members to the
 // global scope, and execute the script.
 const hre = require("hardhat");
-const ethers = hre.ethers;
-
 const { items } = require("../utils/item.json")
 
 function tokens(n) {
@@ -15,25 +13,29 @@ function tokens(n) {
 
 
 async function main() {
+  
   const [deployer] = await ethers.getSigners();
 
   const Rekart = await hre.ethers.getContractFactory("Rekart");
   const rekart = await Rekart.deploy();
   await rekart.deployed();
-  
+
+  console.log("Rekart deployed to:", rekart.address);
+
   for (let i = 0; i < items.length; i++) {
     const transcation = await rekart.connect(deployer).list(
       items[i].id,
       items[i].name,
       items[i].category,
       items[i].image,
-      items[i].carbonfootprint,
       tokens(items[i].price),
+      items[i].rating,
       items[i].stock,
     )
-     await transcation.wait();
+      await transcation.wait()
+
+      console.log(`Listed items ${items[i].id}: ${items[i].name}`)
   }
-  console.log("Rekart deployed to:", rekart.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere

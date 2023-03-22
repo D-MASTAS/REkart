@@ -1,6 +1,7 @@
 import tensorflow as tf
 import numpy as np
 from tensorflow.keras.models import load_model
+from tensorflow.keras.optimizers import Adam
 from flask import jsonify
 import cpuinfo
 
@@ -29,6 +30,31 @@ data = {
         ["Plastic ",
         "Reusable"],
 }
+
+
+cpu_info = cpuinfo.get_cpu_info()
+missing_instructions = []
+
+if 'avx' not in cpu_info['flags']:
+    missing_instructions.append("AVX")
+if 'avx2' not in cpu_info['flags']:
+    missing_instructions.append("AVX2")
+
+if missing_instructions:
+    instructions_str = ", ".join(missing_instructions)
+    print("This TensorFlow binary is optimized with "
+          "oneAPI Deep Neural Network Library (oneDNN) "
+          f"to use the following CPU instructions in performance-critical operations: {instructions_str}."
+          "\nTo enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.")
+
+# Define the custom optimizer
+# class CustomAdam(Adam):
+#     pass
+
+# # Register the custom optimizer
+# tf.keras.utils.get_custom_objects().update({'custom_optimizer': CustomAdam})
+# models.load_model('myModel.h5', compile=False)
+
 
 def load_artifacts():
     global model
