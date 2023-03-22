@@ -74,7 +74,7 @@ module.exports = {
 
       green_logo:{
         '50': '#52bf90'
-      }
+      },
       sea_green: { '100': '#92C9BF',
       '200': '#80C0B4',
       '300': '#6EB7AA',
