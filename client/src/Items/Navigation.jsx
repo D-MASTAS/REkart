@@ -26,13 +26,16 @@ const Navigation = ({account, SetAccount}) => {
   )}
   <ul className='bg-ebony-clay grid-cols-3 col-span-3 p-4 flex justify-center items-center list-none'>
     <li>
-      <a href="#Clothing" className="text-green-500 font-bold hover:underline p-3">Clothing</a>
+      <a href="#" className="text-green-500 font-bold hover:underline p-3">Sawdust</a>
     </li>
     <li>
-      <a href="#Electronics" className="text-green-500 font-bold hover:underline p-3">Electronics</a>
+      <a href="#" className="text-green-500 font-bold hover:underline p-3">Bamboo</a>
     </li>
     <li>
-      <a href="#Toys" className="text-green-500 font-bold hover:underline p-3">Toys</a>
+      <a href="#" className="text-green-500 font-bold hover:underline p-3">Organic</a>
+    </li>
+    <li>
+      <a href="#" className="text-green-500 font-bold hover:underline p-3">Scrap Metal</a>
     </li>
   </ul>
 </nav>

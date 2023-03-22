@@ -1,30 +1,29 @@
 import { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import close from "./assest/close.svg";
+import { Link } from "react-router-dom";
+import Cart from "../Pages/Cart";
 
 const Products = ({ item, provider, account, rekart, togglePop }) => {
-  const [time, setTime] = useState(null);
   const [hasBought, setHasBought] = useState(false);
-
+  const [toggle, setToggle] = useState(false);
+  const [items, setItems] = useState({});
   const buyHandler = async () => {
     const signer = await provider.getSigner();
+
+    const togglePop = (item) => {
+      setItems(item);
+      toggle ? setToggle(false) : setToggle(true);
+    };
 
     // Buy item...
     let transaction = await rekart
       .connect(signer)
       .buy(item.id, { value: item.cost });
     await transaction.wait();
-    const currentUnixTimestamp = Math.floor(Date.now() / 1000);
-    const dateObj = new Date(currentUnixTimestamp * 1000); // convert Unix timestamp to JavaScript timestamp by multiplying with 1000
-    const formattedDateString = dateObj.toLocaleDateString(undefined, {
-      weekday: "long",
-      hour: "numeric",
-      minute: "numeric",
-      second: "numeric",
-    });
-    setTime(formattedDateString);
     setHasBought(true);
   };
+
 
   return (
     <>
@@ -36,26 +35,20 @@ const Products = ({ item, provider, account, rekart, togglePop }) => {
           <div className="h-80 pl-10">
             <h2 className="mb-3">{item.name}</h2>
             <hr className="mb-3 bg-green-500" />
-            <h2 className="mb-3 ">
+            <h2 className="mb-3 text-green-600 font-bold">
               {ethers.utils.formatUnits(item.cost.toString(), "ether")} ETH
             </h2>
             <hr className="mb-6 bg-green-500" />
-            <h2 className="mb-1">Overview</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
-              quia magnam placeat, ipsum natus, saepe odio tempora possimus
-              illum molestiae accusamus nihil neque aut excepturi, consectetur
-              aperiam nemo animi sit.
+            <h2 className="mb-1 font-bold text-gray-800">Overview</h2>
+            <p className="text-gray-700">
+              Sawdust is a byproduct of woodworking that has various applications. It can be compressed into wood pellets, which are used as fuel for heating, cooking, and generating electricity.
             </p>
           </div>
-          <div className="max-w-300 h-90 border-1 border-gray-400 pl-10 pr-20">
-            <h1>
-              {ethers.utils.formatUnits(item.cost.toString(), "ether")} ETH
-            </h1>
+          <div className="max-w-300 h-90 border-1 border-gray-400 pl-10 pr-10">
 
-            <p>
+            <p className="text-gray-700">
               FREE delivery <br />
-              <strong>
+              <strong className="text-green-600">
                 {new Date(Date.now() + 345600000).toLocaleDateString(
                   undefined,
                   { weekday: "long", month: "long", day: "numeric" }
@@ -63,33 +56,25 @@ const Products = ({ item, provider, account, rekart, togglePop }) => {
               </strong>
             </p>
 
-            {item.stock > 0 ? <p>In Stock.</p> : <p>Out of Stock.</p>}
+            {item.stock > 0 ? <p className="text-green-600 font-bold">In Stock.</p> : <p className="text-red-600 font-bold">Out of Stock.</p>}
 
-            <button
-              className="w-235 h-10 p-2 bg-green-500 text-black 
+            { !hasBought &&
+              (<button
+              className="w-235 h-10 p-2 bg-green-500 text-white 
               border-none rounded-xl font-semibold 
               text-md cursor-pointer"
               onClick={buyHandler}
-              disabled={hasBought}
             >
-              Buy Now
-            </button>
+              Buy
+            </button>)
+            }
 
-            <div class="text-sm">
-              <p class="text-green-500">
-                <small>Ships from</small> Rekart
-              </p>
-              <p class="text-green-500">
-                <small>Sold by</small> Rekart
-              </p>
-              {hasBought && (
-                <div className="bg-gray-100 p-4 rounded-md">
-                  <p className="font-medium mb-2">Item bought:</p>
-                  <p className="text-lg font-bold">{time}</p>
-                </div>
+              {hasBought && togglePop && (
+                <>
+                <Cart items={items}></Cart>
+                {/* <Link to='/Cart' className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-1 rounded">Cart</Link> */}
+                </>
               )}
-            </div>
-
             <button
               onClick={togglePop}
               className="absolute top-2 right-2 w-3 h-3 bg-white border-none cursor-pointer"
@@ -100,7 +85,7 @@ const Products = ({ item, provider, account, rekart, togglePop }) => {
         </div>
       </div>
     </>
-  );
+);
 };
 
 export default Products;
