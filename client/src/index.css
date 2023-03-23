@@ -3,3 +3,8 @@
 @tailwind utilities;
 
 
+.block-label {
+    font-size: 35px;
+    /* Other styles here */
+  }
+  

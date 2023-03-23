@@ -1,6 +1,3 @@
-
-import React from 'react'
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
 import Home from './Pages/Home'
 import Login from './components/Login'
@@ -13,7 +10,9 @@ import Policy from './Pages/Policy';
 import Recycle from "./Pages/Recycle"
 import Reuse from "./Pages/Reuse";
 import Repurpose from "./Pages/Repurpose";
+import Product from "./Pages/Product";
 import Shop from "./Pages/Shop";
+import Cart from "./Pages/Cart";
 import Upload from "./Pages/Upload";
 
 
@@ -34,9 +33,9 @@ function App() {
         <Route path="/Recycle" element={<Recycle/>}/>
         <Route path="/Reuse" element={<Reuse/>}/>
         <Route path="/Repurpose" element={<Repurpose/>}/>
-        <Route path="/Shop" element={<Shop/>}/>
+        <Route path="/product" element={<Product/>}/>
         <Route path="/upload" element={<Upload />} />
-        
+        <Route path="/Cart" element={<Cart />}/>
       </Routes>
     </Router>
     <Footer />

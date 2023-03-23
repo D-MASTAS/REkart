@@ -3,12 +3,12 @@ import React from 'react'
 const Footer = () => {
   return (
    
-<footer className="px-4 divide-y bg-white sm:p-6 dark:bg-gray-900 max-w-6xl mx-auto">
+<footer className="px-6 divide-y bg-white sm:p-6 dark:bg-gray-900 max-w-12xl mx-auto">
     <div className="md:flex md:justify-between">
         <div className="mb-6 md:mb-0">
             <a href="https://flowbite.com/" className="flex items-center">
-                <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="FlowBite Logo" />
-                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">REkart</span>
+                <img src="logo1.png" className="h-10 mr-6" alt="FlowBite Logo" />
+                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
             </a>
         </div>
         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">

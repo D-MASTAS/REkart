@@ -1,18 +1,21 @@
 import openai
 import pickle
+from typing import Union
 
-openai.api_key = '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'
-prompt_list: list[str] = ['You are a environmental friendly bot helping people to know about eco-freindly ways to decompose wastes and recommend them eco-friendly product as alternatives of hazardous products.']
+openai.api_key = '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'
 
-def get_api_response(prompt: str) -> str | None:
-    text: str | None = None
+
+def get_api_response(prompt: str) -> Union[str, None]:
+    text: Union[str, None] = None
+    # function body
+
 
     try:
         response: dict = openai.Completion.create(
             model='text-davinci-003',
             prompt=prompt,
             temperature=0.6,
-            max_tokens=50,
+            max_tokens=200,
             top_p=1,
             frequency_penalty=0,
             presence_penalty=0.6,
@@ -52,18 +55,6 @@ def get_bot_response(message: str, pl: list[str]) -> str:
 
     return bot_response
 
-
-def app():
-    Initializer='Bot: Hello,I am RE-bot,I am here to help with issues relate dto waste material and its management.'
-    print(f'{Initializer}')
-    while True:
-        user_input: str = input('You: ')
-        response: str = get_bot_response(user_input, prompt_list)
-        print(f'RE-bot : {response}')
-
-
-if __name__=="__main__":
-    app()
 
 
 
