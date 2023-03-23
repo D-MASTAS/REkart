@@ -39,4 +39,3 @@ typing-extensions
 urllib3
 Werkzeug
 wrapt
--e .
