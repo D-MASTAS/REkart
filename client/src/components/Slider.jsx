@@ -1,15 +1,17 @@
-import React from 'react'
-import react, {useState} from 'react';
+
+import React, {useState} from 'react';
 import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs';
 import {RxDotFilled} from 'react-icons/rx';
 
+function Slider(){
 
 
-const Slider = () => {
 
     const slides = [
       {url: 'Carousel1.png' },
-      {url: 'Img2.png'},
+      {url: 'Carousel2.png'},
+      {url: 'Carousel3.png'},
+      {url: 'Carousel4.png'},
     ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const prevSlide = ()=> {
@@ -19,7 +21,7 @@ const Slider = () => {
   };
   const nextSlide = ()=>{
     const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
   const goToSlide = (slideIndex) => {
@@ -39,7 +41,7 @@ const Slider = () => {
           ))
   }</div>
       </div>
-  )
+  );
 }
   
   export default Slider;
