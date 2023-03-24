@@ -4,7 +4,7 @@
         "id": 1,
         "name": "Wood pellets",
         "category": "sawdust",
-        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "image": "woodPellet.png",
         "carbonfootprint": "16KG/GJ",
         "price": "1",
         "stock": 10
@@ -13,7 +13,7 @@
         "id": 2,
         "name": "Particleboard",
         "category": "sawdust",
-        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "image": "particleBoard.png",
         "carbonfootprint":"25KG/GJ" ,
         "price": "2",
         "stock": 6
@@ -22,7 +22,7 @@
         "id": 3,
         "name": "Mulch",
         "category": "sawdust",
-        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "image": "mulch.png",
         "carbonfootprint": "14KG/GJ",
         "price": "0.25",
         "rating": 2,
@@ -32,7 +32,7 @@
         "id": 4,
         "name": "Animal bedding",
         "category": "sawdust",
-        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "image": "animalBedding.png",
         "carbonfootprint": "70KG/GJ",
         "price": "0.25",
         "stock": 3
@@ -41,7 +41,7 @@
         "id": 5,
         "name": "Fertilizer",
         "category": "sawdust",
-        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "image": "fertilizer.png",
         "carbonfootprint": "9KG/GJ",
         "price": "0.10",
         "stock": 12
@@ -50,7 +50,7 @@
         "id": 6,
         "name": "Bamboo Toothbrushes",
         "category": "bamboo",
-        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "image": "toothbrush.png",
         "carbonfootprint": "0.2KG/GJ",
         "price": "1",
         "stock": 10
@@ -59,7 +59,7 @@
         "id": 7,
         "name": "Cutting Boards",
         "category": "bamboo",
-        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "image": "cuttingBoard.png",
         "carbonfootprint":"0.43KG/GJ" ,
         "price": "2",
         "stock": 6
@@ -68,7 +68,7 @@
         "id": 8,
         "name": "Kitchen Utensils",
         "category": "bamboo",
-        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "image": "utensils.png",
         "carbonfootprint": "0.16KG/GJ",
         "price": "0.25",
         "rating": 2,
@@ -78,7 +78,7 @@
         "id": 9,
         "name": "Straws",
         "category": "bamboo",
-        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "image": "straws.png",
         "carbonfootprint": "0.05KG/GJ",
         "price": "0.25",
         "stock": 3
@@ -87,7 +87,7 @@
         "id": 10,
         "name": "Charcoal Air Purifier Bags",
         "category": "bamboo",
-        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "image": "airPurifier.png",
         "carbonfootprint": "1.62KG/GJ",
         "price": "0.10",
         "stock": 12
@@ -96,7 +96,7 @@
         "id": 11,
         "name": "Kajal",
         "category": "organic",
-        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "image": "kajal.png",
         "carbonfootprint": "1KG/GJ",
         "price": "1",
         "stock": 10
@@ -105,7 +105,7 @@
         "id": 12,
         "name": "Food Color",
         "category": "organic",
-        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "image": "foodColor.png",
         "carbonfootprint":"" ,
         "price": "2",
         "stock": 6
@@ -114,7 +114,7 @@
         "id": 13,
         "name": "Fertilizer",
         "category": "organic",
-        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "image": "orgFertilizer.png",
         "carbonfootprint": "1.5KG/GJ",
         "price": "0.25",
         "rating": 2,
@@ -124,7 +124,7 @@
         "id": 14,
         "name": "Plates",
         "category": "organic",
-        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "image": "plates.png",
         "carbonfootprint": "0.24KG/GJ",
         "price": "0.25",
         "stock": 3
@@ -133,7 +133,7 @@
         "id": 15,
         "name": "Cleaner",
         "category": "organic",
-        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "image": "cleaner.png",
         "carbonfootprint": "0.5KG/GJ",
         "price": "0.10",
         "stock": 12
@@ -142,7 +142,7 @@
         "id": 16,
         "name": "Cans",
         "category": "scrapmetal",
-        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "image": "cans.png",
         "carbonfootprint": "0.2KG/GJ",
         "price": "1",
         "stock": 10
@@ -151,7 +151,7 @@
         "id": 17,
         "name": "Wire",
         "category": "scrapmetal",
-        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "image": "wires.png",
         "carbonfootprint":"0.43KG/GJ" ,
         "price": "2",
         "stock": 6
@@ -160,7 +160,7 @@
         "id": 18,
         "name": "Nails",
         "category": "scrapmetal",
-        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "image": "nails.png",
         "carbonfootprint": "0.16KG/GJ",
         "price": "0.25",
         "rating": 2,
@@ -170,7 +170,7 @@
         "id": 19,
         "name": "Casting",
         "category": "scrapmetal",
-        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "image": "castings.png",
         "carbonfootprint": "0.05KG/GJ",
         "price": "0.25",
         "stock": 3
@@ -179,7 +179,7 @@
         "id": 20,
         "name": "Fittings",
         "category": "scrapmetal",
-        "image": "https://images.unsplash.com/photo-1577180750133-c34d889bbadf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "image": "fittings.png",
         "carbonfootprint": "1.62KG/GJ",
         "price": "0.10",
         "stock": 12
