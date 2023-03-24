@@ -1,6 +1,29 @@
 import React from 'react'
+import { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const Reuse = () => {
+
+  const [ toggle, setToggle ] = useState(false);
+  const [showModal, setShowModal] = useState(true);
+
+  const handleCloseModal = () => {
+    setToggle(false);
+  };
+
+  const handleClick = () => {
+    setToggle(true);
+  }
+
+  const deliveryDate = new Date(Date.now() + 3 * 24 * 60 * 60 * 1000); // 3 days after current time
+
+  const formattedDeliveryDate = deliveryDate.toLocaleDateString('en-US', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+
   return (
 
     <div className="flex justify-center items-center bg-froly-400 min-h-screen">
@@ -74,7 +97,7 @@ const Reuse = () => {
           
        
               <input
-                type="number"
+                type="text"
                 className="w-full py-2 border border-black rounded mt-3 px-3"
                 placeholder="Enter your address here"
                 
@@ -83,22 +106,30 @@ const Reuse = () => {
             <hr className="my-4" />
           
             <div className="my-4 flex justify-between">
-              <button  className="buttons bg-acapulco-400 rounded-2xl p-2">
+              <button  className="buttons bg-acapulco-400 rounded-2xl p-2" onClick={handleClick}>
                 Donate Now
               </button>
             </div>
-         
-            
-
-           
-          
-     
-          
-         
           </div>
         
       </div>
     </div>
+    {
+      toggle && (<div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-blue-100">
+      <div className="relative w-full max-w-md mx-auto rounded-md overflow-hidden">
+        <div className="bg-white p-6">
+          <div className="flex flex-col items-center justify-center">
+            <h1 className="text-4xl font-bold text-gray-800 mb-4">Waste Pickup</h1>
+            <p className="text-lg text-gray-600 mb-6">
+              We will pick up your waste for reuse and contact you as soon as possible.
+            </p>
+          </div>
+          <Link to='/' onClick={handleCloseModal} className="py-2 px-4 rounded-md bg-blue-500 text-white hover:bg-blue-600 transition duration-200 ease-in-out">Close</Link>
+        </div>
+      </div>
+    </div>
+    )
+    }
   </div>
   )
 }
