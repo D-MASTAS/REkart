@@ -40,7 +40,7 @@ const Product = () => {
     setProvider(provider);
 
     const rekart = new ethers.Contract(
-      "0x59b670e9fA9D0A427751Af201D676719a970857b",
+      "0x172076E0166D1F9Cc711C77Adf8488051744980C",
       ABI,
       provider
     );

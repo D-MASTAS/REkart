@@ -6,7 +6,7 @@
         "category": "sawdust",
         "image": "woodPellet.png",
         "carbonfootprint": "16KG/GJ",
-        "price": "1",
+        "price": "2.7",
         "stock": 10
       },
       {
@@ -15,7 +15,7 @@
         "category": "sawdust",
         "image": "particleBoard.png",
         "carbonfootprint":"25KG/GJ" ,
-        "price": "2",
+        "price": "5.8",
         "stock": 6
       },
       {
@@ -24,7 +24,7 @@
         "category": "sawdust",
         "image": "mulch.png",
         "carbonfootprint": "14KG/GJ",
-        "price": "0.25",
+        "price": "2.5",
         "rating": 2,
         "stock": 24
       },
@@ -34,7 +34,7 @@
         "category": "sawdust",
         "image": "animalBedding.png",
         "carbonfootprint": "70KG/GJ",
-        "price": "0.25",
+        "price": "2.5",
         "stock": 3
       },
       {
@@ -43,7 +43,7 @@
         "category": "sawdust",
         "image": "fertilizer.png",
         "carbonfootprint": "9KG/GJ",
-        "price": "0.10",
+        "price": "10",
         "stock": 12
       },
       {
@@ -52,7 +52,7 @@
         "category": "bamboo",
         "image": "toothbrush.png",
         "carbonfootprint": "0.2KG/GJ",
-        "price": "1",
+        "price": "3",
         "stock": 10
       },
       {
@@ -61,7 +61,7 @@
         "category": "bamboo",
         "image": "cuttingBoard.png",
         "carbonfootprint":"0.43KG/GJ" ,
-        "price": "2",
+        "price": "13",
         "stock": 6
       },
       {
@@ -70,7 +70,7 @@
         "category": "bamboo",
         "image": "utensils.png",
         "carbonfootprint": "0.16KG/GJ",
-        "price": "0.25",
+        "price": "25",
         "rating": 2,
         "stock": 24
       },
@@ -80,7 +80,7 @@
         "category": "bamboo",
         "image": "straws.png",
         "carbonfootprint": "0.05KG/GJ",
-        "price": "0.25",
+        "price": "2",
         "stock": 3
       },
       {
@@ -89,7 +89,7 @@
         "category": "bamboo",
         "image": "airPurifier.png",
         "carbonfootprint": "1.62KG/GJ",
-        "price": "0.10",
+        "price": "10",
         "stock": 12
       },
       {
@@ -98,7 +98,7 @@
         "category": "organic",
         "image": "kajal.png",
         "carbonfootprint": "1KG/GJ",
-        "price": "1",
+        "price": "3",
         "stock": 10
       },
       {
@@ -116,7 +116,7 @@
         "category": "organic",
         "image": "orgFertilizer.png",
         "carbonfootprint": "1.5KG/GJ",
-        "price": "0.25",
+        "price": "25",
         "rating": 2,
         "stock": 24
       },
@@ -126,7 +126,7 @@
         "category": "organic",
         "image": "plates.png",
         "carbonfootprint": "0.24KG/GJ",
-        "price": "0.25",
+        "price": "17",
         "stock": 3
       },
       {
@@ -135,7 +135,7 @@
         "category": "organic",
         "image": "cleaner.png",
         "carbonfootprint": "0.5KG/GJ",
-        "price": "0.10",
+        "price": "20",
         "stock": 12
       },
       {
@@ -144,7 +144,7 @@
         "category": "scrapmetal",
         "image": "cans.png",
         "carbonfootprint": "0.2KG/GJ",
-        "price": "1",
+        "price": "3.8",
         "stock": 10
       },
       {
@@ -153,7 +153,7 @@
         "category": "scrapmetal",
         "image": "wires.png",
         "carbonfootprint":"0.43KG/GJ" ,
-        "price": "2",
+        "price": "8.0",
         "stock": 6
       },
       {
@@ -162,7 +162,7 @@
         "category": "scrapmetal",
         "image": "nails.png",
         "carbonfootprint": "0.16KG/GJ",
-        "price": "0.25",
+        "price": "2",
         "rating": 2,
         "stock": 24
       },
@@ -172,7 +172,7 @@
         "category": "scrapmetal",
         "image": "castings.png",
         "carbonfootprint": "0.05KG/GJ",
-        "price": "0.25",
+        "price": "23",
         "stock": 3
       },
       {
@@ -181,7 +181,7 @@
         "category": "scrapmetal",
         "image": "fittings.png",
         "carbonfootprint": "1.62KG/GJ",
-        "price": "0.10",
+        "price": "10",
         "stock": 12
       }
     ]

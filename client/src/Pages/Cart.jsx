@@ -48,14 +48,14 @@ const Cart = () => {
           <div class="mt-8 space-y-3 rounded-lg border bg-white px-2 py-4 sm:px-6">
             <div class="flex flex-col rounded-lg bg-white sm:flex-row">
               <img
-                class="m-2 h-24 w-28 rounded-md border object-cover object-center"
-                src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c25lYWtlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                class="m-2 h-24 w-28 rounded-md border object-cover"
+                src="toothbrush.png"
                 alt=""
               />
               <div class="flex w-full flex-col px-4 py-4">
-                <span class="font-semibold">Hello</span>
-                <span class="float-right text-gray-400">42EU - 8.5US</span>
-                <p class="text-lg font-bold">$138.99</p>
+                <span class="font-semibold">Bamboo TouthBrush</span>
+                <span class="float-right text-green-700">Recycleable</span>
+                <p class="text-lg font-bold">1 ETH</p>
               </div>
             </div>
             {/* <div class="flex flex-col rounded-lg bg-white sm:flex-row">
@@ -208,7 +208,7 @@ const Cart = () => {
             <div class="mt-6 border-t border-b py-2">
               <div class="flex items-center justify-between">
                 <p class="text-sm font-medium text-gray-900">Subtotal</p>
-                <p class="font-semibold text-gray-900">$399.00</p>
+                <p class="font-semibold text-gray-900">1 ETH</p>
               </div>
               {/* <div class="flex items-center justify-between">
           <p class="text-sm font-medium text-gray-900">Shipping</p>
@@ -216,8 +216,8 @@ const Cart = () => {
         </div> */}
             </div>
             <div class="mt-6 flex items-center justify-between">
-              <p class="text-sm font-medium text-gray-900">Total</p>
-              <p class="text-2xl font-semibold text-gray-900">$408.00</p>
+              <p class="text-sm font-medium text-gray-900">Status</p>
+              <p class="text-2xl font-semibold text-green-500">PAID</p>
             </div>
           </div>
           <button
