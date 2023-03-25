@@ -12,7 +12,7 @@ function Chatbot() {
       setMessages((prevMessages) => [...prevMessages, { sender: 'You', message: input }]);
   
       event.target.elements.message.value = '';
-      fetch('http://ec2-54-252-43-106.ap-southeast-2.compute.amazonaws.com:5050/chatbot', {
+      fetch('http://ec2-13-239-6-44.ap-southeast-2.compute.amazonaws.com:5050/chatbot', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

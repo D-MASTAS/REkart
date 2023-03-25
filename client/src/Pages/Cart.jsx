@@ -55,7 +55,7 @@ const Cart = () => {
               <div class="flex w-full flex-col px-4 py-4">
                 <span class="font-semibold">Bamboo TouthBrush</span>
                 <span class="float-right text-green-700">Recycleable</span>
-                <p class="text-lg font-bold">1 ETH</p>
+                <p class="text-lg font-bold">1 MATIC</p>
               </div>
             </div>
             {/* <div class="flex flex-col rounded-lg bg-white sm:flex-row">
@@ -208,7 +208,7 @@ const Cart = () => {
             <div class="mt-6 border-t border-b py-2">
               <div class="flex items-center justify-between">
                 <p class="text-sm font-medium text-gray-900">Subtotal</p>
-                <p class="font-semibold text-gray-900">1 ETH</p>
+                <p class="font-semibold text-gray-900">1 MATIC</p>
               </div>
               {/* <div class="flex items-center justify-between">
           <p class="text-sm font-medium text-gray-900">Shipping</p>

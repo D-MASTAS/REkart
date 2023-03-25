@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import close from "./assest/close.svg";
 import { Link } from "react-router-dom";
-import Cart from "../Pages/Cart";
+
 
 const Products = ({ item, provider, account, rekart, togglePop }) => {
   const [hasBought, setHasBought] = useState(false);
@@ -71,8 +71,7 @@ const Products = ({ item, provider, account, rekart, togglePop }) => {
 
               {hasBought && togglePop && (
                 <>
-                <Cart items={items}></Cart>
-                {/* <Link to='/Cart' className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-1 rounded">Cart</Link> */}
+                <Link to='/Cart' className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-1 rounded">Cart</Link>
                 </>
               )}
             <button
