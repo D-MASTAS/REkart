@@ -4,7 +4,7 @@ const tokens = (n) => {
   return ethers.utils.parseUnits(n.toString(), 'ether')
 }
 
-// Global constants for listing an item...
+
 const ID = 1
 const NAME = "Bag"
 const CATEGORY = "Carrying"
@@ -18,10 +18,9 @@ describe("Rekart", () => {
   let deployer, buyer
 
   beforeEach(async () => {
-    // Setup accounts
+   
     [deployer, buyer] = await ethers.getSigners()
 
-    // Deploy contract
     const Rekart = await ethers.getContractFactory("Rekart")
     rekart = await Rekart.deploy()
   })
@@ -36,7 +35,7 @@ describe("Rekart", () => {
     let transaction
 
     beforeEach(async () => {
-      // List a item
+
       transaction = await rekart.connect(deployer).list(ID, NAME, CATEGORY, IMAGE, CARBONFOOTPRINT, COST, STOCK)
       await transaction.wait()
     })
@@ -62,11 +61,11 @@ describe("Rekart", () => {
     let transaction
 
     beforeEach(async () => {
-      // List a item
+ 
       transaction = await rekart.connect(deployer).list(ID, NAME, CATEGORY, IMAGE, CARBONFOOTPRINT, COST, STOCK)
       await transaction.wait()
 
-      // Buy a item
+ 
       transaction = await rekart.connect(buyer).buy(ID, { value: COST })
       await transaction.wait()
     })
@@ -98,18 +97,16 @@ describe("Rekart", () => {
     let balanceBefore
 
     beforeEach(async () => {
-      // List a item
+
       let transaction = await rekart.connect(deployer).list(ID, NAME, CATEGORY, IMAGE, CARBONFOOTPRINT, COST, STOCK)
       await transaction.wait()
 
-      // Buy a item
+ 
       transaction = await rekart.connect(buyer).buy(ID, { value: COST })
       await transaction.wait()
 
-      // Get Deployer balance before
       balanceBefore = await ethers.provider.getBalance(deployer.address)
 
-      // Withdraw
       transaction = await rekart.connect(deployer).withdraw()
       await transaction.wait()
     })

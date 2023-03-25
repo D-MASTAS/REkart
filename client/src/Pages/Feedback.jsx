@@ -12,7 +12,7 @@ const Feedback = () => {
           <img src="aboutus1.png" alt="" ></img>
         </div>
         <div class="md:7/12 lg:w-6/12">
-          <h2 class="text-3xl text-gray-900 mt-0 font-bold font-serif md:text-4xl py-4 animate-pulse">About Us</h2>
+          <h2 class="text-3xl text-Sheen_green-50 mt-0 font-bold font-serif md:text-4xl py-4 animate-pulse">About Us</h2>
           <p class="mb-3 font-light text-left text-gray-600 dark:text-gray-400 font-serif">We are just a bunch of college students trying to solve the Global Environmental issues at the grass root level, to make our home, Planet Earth- a better place to live. We all are aware countries are trying to achieve net zero status in carbon emissions, to check the global warming and environmental degradation that follows it. Taking an analogy from the same concept of balancing net zero, we noticed that the contemporary manner of consumerism leaves a massive trail of waste that we have to deal with separately, being taken out of the producer-consumer cycle.</p>
           <p class="mb-3 font-light text-left text-gray-600 dark:text-gray-400 font-serif">In this model, not only net waste emission is high but a quantity of virgin raw materials has to be used by the producer to generate new goods.
 </p>
@@ -22,7 +22,6 @@ const Feedback = () => {
   </div>
 </div> 
 <div class="flex ...">
-
 
   <div class="flex w-w/2  px-32 py-6">
   <div class="flex flex-col  ml:4 md:7/12 lg:w-6/12">
@@ -34,7 +33,6 @@ We, Team REKART identified the issues in this model and constructed solutions fo
   <div className="flex flex-col ml-16 py-12 md:5/12  lg:w-6/12 h-10/12">
     <img src="visionnew.png" alt="" />
     </div>      
-
   </div>
  
 </div>
@@ -42,7 +40,7 @@ We, Team REKART identified the issues in this model and constructed solutions fo
 
 
 
-<div ><h1 class="font-bold  font-serif text-3xl md:text-3xl lg:text-4xl font-heading text-gray-900 text-center py-3">
+<div ><h1 class="font-bold  font-serif text-3xl md:text-3xl lg:text-4xl font-heading text-Sheen_green-50 text-center py-3">
   Our Goal</h1>
 <p class=" mx-60 font-serif  text-lg   content-center  text-center lg:items-center dark:text-gray-400  text-gray-600">Our Goal at REKart is to use the latest piece of technology such as blockchain and machine learning models to find innovative solutions to our environmental problems and to ensure the implementation of these 5R principles right from the grass root level. We believe that this technology-enabled approach will help us better tackle the existing environmental issues and to achieve our mission to minimize the net waste emission from our planet.
 
@@ -120,13 +118,21 @@ We, Team REKART identified the issues in this model and constructed solutions fo
 <section class="max-w-6xl mx-auto px-1 sm:px-2 lg: py-4">
     <div class="text-center pb-12">
        
-        <h1 class="font-bold text-3xl md:text-3xl lg:text-4xl font-heading text-gray-900 animate-bounce">
+        <h1 class="font-bold text-3xl md:text-3xl lg:text-4xl font-heading text-Sheen_green-50 animate-bounce">
              Team REKart
         </h1>
         <p class="py-4 px-5 text-gray-400">We, Team REKart identified the issues in this model and constructed solutions for it, using the 5R principles. On our platform, We made it easier for the consumers to implement these principles, giving them detailed information in easy-to-follow steps & assisting them in donating reusable stuff in just a few clicks.</p>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
-       
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-6 gap-6">
+        <div class="w-full bg-white rounded-lg p5 flex flex-col justify-center items-center">
+            <div class="mb-8">
+                <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt=""></img>
+            </div>
+            <div class="text-center">
+                <p class="text-xl text-gray-700 font-bold mb-1">Tanishq </p>
+                <p class="text-base text-gray-400 font-normal">Blockchain Developer</p>
+            </div>
+        </div>
         <div class="w-full bg-white rounded-lg p-5 flex flex-col justify-center items-center">
             <div class="mb-8">
                 <img class="object-center object-cover rounded-full h-36 w-36" src="https://media.licdn.com/dms/image/D4D03AQE5nrL1YDA2SQ/profile-displayphoto-shrink_800_800/0/1670651372718?e=1684368000&v=beta&t=MjulZsWgifirN0kuZLpTnfcF2rrh7x2mJlK3-Tm7CMg" alt=""></img>
@@ -163,7 +169,15 @@ We, Team REKART identified the issues in this model and constructed solutions fo
                 <p class="text-base text-gray-400 font-normal">Frontent Developer</p>
             </div>
         </div>
-        
+        <div class="w-full bg-white rounded-lg p-5 flex flex-col justify-center items-center">
+            <div class="mb-8">
+                <img class="object-center object-cover rounded-full h-36 w-36" src="https://media.licdn.com/dms/image/D5603AQEdcOqvhpifbA/profile-displayphoto-shrink_400_400/0/1637167968649?e=1684368000&v=beta&t=t2D9YoeG3qX3qftB72NaDlL8nrBEEA-jf_k-lFGjCy4" alt=""></img>
+            </div>
+            <div class="text-center">
+                <p class="text-xl text-gray-700 font-bold mb-1">Aryamman</p>
+                <p class="text-base text-gray-400 font-normal">Graphic Designer</p>
+            </div>
+        </div>
     </div>
 </section>
       </section>
