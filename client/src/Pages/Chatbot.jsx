@@ -12,7 +12,7 @@ function Chatbot() {
       setMessages((prevMessages) => [...prevMessages, { sender: 'You', message: input }]);
   
       event.target.elements.message.value = '';
-      fetch('http://127.0.0.1:5000/chatbot', {
+      fetch('http://ec2-54-252-43-106.ap-southeast-2.compute.amazonaws.com:5050/chatbot', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ function Chatbot() {
     }
   
     return (
-      <div className="h-screen flex flex-col justify-between p-4 bg-green-100">
+      <div className="h-screen w-200 flex flex-col justify-between p-4 bg-green-100">
         <h1 className="text-2xl font-bold mb-4 text-green-800">Eco Chatbot</h1>
         <ul className="flex-1 overflow-auto">
           {messages.map((message, index) => (
