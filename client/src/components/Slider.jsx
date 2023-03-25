@@ -1,15 +1,17 @@
-import React from 'react'
-import react, {useState} from 'react';
+
+import React, {useState} from 'react';
 import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs';
 import {RxDotFilled} from 'react-icons/rx';
 
+function Slider(){
 
 
-const Slider = () => {
 
     const slides = [
-      {url: 'Img1.png' },
-      {url: 'Img2.png'},
+      {url: 'Carousel1.png' },
+      {url: 'Carousel2.png'},
+      {url: 'Carousel3.png'},
+      {url: 'Carousel4.png'},
     ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const prevSlide = ()=> {
@@ -19,15 +21,15 @@ const Slider = () => {
   };
   const nextSlide = ()=>{
     const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };
 
-  return (<div className='max-w-[2200px] h-[600px] w-full m-auto py-8 px-32 relative group '>
-    <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className=' w-full h-full rounded-2xl bg-center bg-cover duration-500'>
+  return (<div className='max-w-[1600px] h-[650px] w-full m-auto relative group '>
+    <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className=' w-full h-full  bg-center bg-cover duration-500'>
       </div> 
       {/* left arrow */}
       <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'><BsChevronCompactLeft onClick={prevSlide} size={30}/></div>
@@ -39,7 +41,7 @@ const Slider = () => {
           ))
   }</div>
       </div>
-  )
+  );
 }
   
   export default Slider;

@@ -1,0 +1,188 @@
+{
+    "items": [
+      {
+        "id": 1,
+        "name": "Wood pellets",
+        "category": "sawdust",
+        "image": "woodPellet.png",
+        "carbonfootprint": "16KG/GJ",
+        "price": "2.7",
+        "stock": 10
+      },
+      {
+        "id": 2,
+        "name": "Particleboard",
+        "category": "sawdust",
+        "image": "particleBoard.png",
+        "carbonfootprint":"25KG/GJ" ,
+        "price": "5.8",
+        "stock": 6
+      },
+      {
+        "id": 3,
+        "name": "Mulch",
+        "category": "sawdust",
+        "image": "mulch.png",
+        "carbonfootprint": "14KG/GJ",
+        "price": "2.5",
+        "rating": 2,
+        "stock": 24
+      },
+      {
+        "id": 4,
+        "name": "Animal bedding",
+        "category": "sawdust",
+        "image": "animalBedding.png",
+        "carbonfootprint": "70KG/GJ",
+        "price": "2.5",
+        "stock": 3
+      },
+      {
+        "id": 5,
+        "name": "Fertilizer",
+        "category": "sawdust",
+        "image": "fertilizer.png",
+        "carbonfootprint": "9KG/GJ",
+        "price": "10",
+        "stock": 12
+      },
+      {
+        "id": 6,
+        "name": "Bamboo Toothbrushes",
+        "category": "bamboo",
+        "image": "toothbrush.png",
+        "carbonfootprint": "0.2KG/GJ",
+        "price": "3",
+        "stock": 10
+      },
+      {
+        "id": 7,
+        "name": "Cutting Boards",
+        "category": "bamboo",
+        "image": "cuttingBoard.png",
+        "carbonfootprint":"0.43KG/GJ" ,
+        "price": "13",
+        "stock": 6
+      },
+      {
+        "id": 8,
+        "name": "Kitchen Utensils",
+        "category": "bamboo",
+        "image": "utensils.png",
+        "carbonfootprint": "0.16KG/GJ",
+        "price": "25",
+        "rating": 2,
+        "stock": 24
+      },
+      {
+        "id": 9,
+        "name": "Straws",
+        "category": "bamboo",
+        "image": "straws.png",
+        "carbonfootprint": "0.05KG/GJ",
+        "price": "2",
+        "stock": 3
+      },
+      {
+        "id": 10,
+        "name": "Charcoal Air Purifier Bags",
+        "category": "bamboo",
+        "image": "airPurifier.png",
+        "carbonfootprint": "1.62KG/GJ",
+        "price": "10",
+        "stock": 12
+      },
+      {
+        "id": 11,
+        "name": "Kajal",
+        "category": "organic",
+        "image": "kajal.png",
+        "carbonfootprint": "1KG/GJ",
+        "price": "3",
+        "stock": 10
+      },
+      {
+        "id": 12,
+        "name": "Food Color",
+        "category": "organic",
+        "image": "foodColor.png",
+        "carbonfootprint":"" ,
+        "price": "2",
+        "stock": 6
+      },
+      {
+        "id": 13,
+        "name": "Fertilizer",
+        "category": "organic",
+        "image": "orgFertilizer.png",
+        "carbonfootprint": "1.5KG/GJ",
+        "price": "25",
+        "rating": 2,
+        "stock": 24
+      },
+      {
+        "id": 14,
+        "name": "Plates",
+        "category": "organic",
+        "image": "plates.png",
+        "carbonfootprint": "0.24KG/GJ",
+        "price": "17",
+        "stock": 3
+      },
+      {
+        "id": 15,
+        "name": "Cleaner",
+        "category": "organic",
+        "image": "cleaner.png",
+        "carbonfootprint": "0.5KG/GJ",
+        "price": "20",
+        "stock": 12
+      },
+      {
+        "id": 16,
+        "name": "Cans",
+        "category": "scrapmetal",
+        "image": "cans.png",
+        "carbonfootprint": "0.2KG/GJ",
+        "price": "3.8",
+        "stock": 10
+      },
+      {
+        "id": 17,
+        "name": "Wire",
+        "category": "scrapmetal",
+        "image": "wires.png",
+        "carbonfootprint":"0.43KG/GJ" ,
+        "price": "8.0",
+        "stock": 6
+      },
+      {
+        "id": 18,
+        "name": "Nails",
+        "category": "scrapmetal",
+        "image": "nails.png",
+        "carbonfootprint": "0.16KG/GJ",
+        "price": "2",
+        "rating": 2,
+        "stock": 24
+      },
+      {
+        "id": 19,
+        "name": "Casting",
+        "category": "scrapmetal",
+        "image": "castings.png",
+        "carbonfootprint": "0.05KG/GJ",
+        "price": "23",
+        "stock": 3
+      },
+      {
+        "id": 20,
+        "name": "Fittings",
+        "category": "scrapmetal",
+        "image": "fittings.png",
+        "carbonfootprint": "1.62KG/GJ",
+        "price": "10",
+        "stock": 12
+      }
+    ]
+  }
