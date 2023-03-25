@@ -6,7 +6,7 @@ const Product = () => {
 <div className="flex justify-center pt-32 bg-white">
   <div className="pb-10">
   <div>
-         <p className='text-4xl font-bold inline '>Try out our organic range of products!</p>
+         <p className='text-4xl font-bold text-gray-800  inline '>Try out our organic range of products!</p>
        </div>
   </div>
 </div>
