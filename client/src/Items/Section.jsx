@@ -14,7 +14,7 @@ const Section = ({ title, items, togglePop }) => {
         </div>
         <div className="w-full bg-white py-5 px-10  bottom-0 left-0">
           <h4>{item.name}</h4>
-          <p>{ethers.utils.formatUnits(item.cost.toString(), 'ether')} ETH</p>
+          <p>{ethers.utils.formatUnits(item.cost.toString(), 'ether')} MATIC</p>
         </div>
       </div>
     ))}

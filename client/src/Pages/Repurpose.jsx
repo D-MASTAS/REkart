@@ -29,28 +29,19 @@ const Repurpose = () => {
             </p>
           </div>
 
-          <div className="h-full p-3 rounded-lg w-full bg-white">
+        <div className="h-full p-3 rounded-lg w-full bg-white">
             <p className="font-semibold text-xl mt-2 text-cascade-800 text-center">
-              Here are ways you can go creative and repurpose waste items:
+              You can also Take Help Of Our AI Assistance
             </p>
             <div className="mt-4 w-full flex flex-col">
               <div className="flex gap-2 w-full"></div>
             </div>
 
-            <p className="mt-3 font-semibold text-cascade-800">Waste Items:</p>
             <div className="flex mt-3 gap-2"></div>
 
-            <input
-              type="number"
-              className="w-full py-2 border border-black rounded mt-3 px-3"
-              placeholder="Enter the waste Item"
-            />
-
-            <hr className="my-4" />
-
-            <div className="my-4 flex justify-between">
+            <div className="my-4 flex justify-center">
               <button
-                className="buttons bg-acapulco-400 rounded-2xl p-2"
+                className="buttons bg-acapulco-400 rounded-2xl p-2 "
                 onClick={handleChatbotToggle}
               >
                 {showChatbot ? "Close Chatbot" : "Open Chatbot"}
