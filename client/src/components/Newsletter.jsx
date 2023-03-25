@@ -6,11 +6,11 @@ const Newsletter = () => {
   <div className="mx-auto max-w-7xl px-6 lg:px-8">
     <div className="mx-auto lg:max-w-none lg:grid-cols-2">
       <div className="max-w-xl lg:max-w-lg">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl">Subscribe to our newsletter.</h2>
-        <p className="mt-4 text-lg leading-8 text-gray-700"> Get timely updates from your favourite products!</p>
+        <h2 className="text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl text-center">Subscribe to our newsletter</h2>
+        <p className="mt-4 text-lg leading-8 text-gray-700 text-center"> Get timely updates from your favourite products!</p>
         <div className="mt-6 flex max-w-md gap-x-4">
           <label for="email-address" className="sr-only">Email address</label>
-          <input id="email-address" name="email" type="email" autocomplete="email" required className="min-w-0 flex-auto rounded-md border-0 bg-sea_green-100 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-mineral_green-600 sm:text-sm sm:leading-6" placeholder="Enter your email"/>
+          <input id="email-address" name="email" type="email" autocomplete="email" required className="min-w-0 flex-auto rounded-md border-0 bg-sea_green-100 px-3.5 py-2 text-gray-700 shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-mineral_green-600 sm:text-sm sm:leading-6" placeholder="Enter your email"/>
           <button type="submit" className="flex-none rounded-md bg-mineral_green-600 py-2.5 px-3.5 text-sm font-semibold text-white shadow-sm hover:bg-mineral_green-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mineral_green-600">Subscribe</button>
         </div>
       </div>

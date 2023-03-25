@@ -13,9 +13,13 @@ const Recycle = () => {
             <h2 className="mb-4 text-4xl tracking-tight font-medium text-center text-cascade-800">
               Recycle
             </h2>
-            <p className="px-4 text-cascade-800 font-medium">Our Mission</p>
+            
             <p className="mt-4 px-4 text-gray-500">
-            Reduce, Reuse, Recycle: Try to reduce the amount of waste you generate by using reusable items like cloth bags, water bottles, and containers. Recycle items like paper, plastic, glass, and metal.
+            The United States Environmental Protection Agency (EPA) estimates that 94% of everyday waste is recyclable, but only 32% is recycled. The reason behind this is that people are unaware of either 'what to recycle' or 'where/how to recycle it'. 
+Now with REKART, you can find out what items to recycle either by listing your items on our chatbot or just by taking a picture of items that are to be discarded. 
+﻿Now, coming to the question that where/how to recycle these items.
+REKART provides all its users with a way to give items for recycling from the comfort of their homes where they can list their items to be recycled and we will collect those items right from their doorsteps.
+
             </p>
           </div>
           <div className="h-full p-3 rounded-lg w-full bg-white">

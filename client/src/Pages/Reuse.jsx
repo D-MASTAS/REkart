@@ -37,10 +37,9 @@ const Reuse = () => {
             </h2>
             <p className="px-4 text-cascade-800 font-medium">Our Mission</p>
             <p className="mt-4 px-4 text-gray-500">
-              Reduce, Reuse, Recycle: Try to reduce the amount of waste you
-              generate by using reusable items like cloth bags, water bottles,
-              and containers. Recycle items like paper, plastic, glass, and
-              metal.
+            Hey, wait up!! are you going to discard those things? Don't you know that person's trash "one person's trash is another person's treasure"? Rather than throwing away unused furniture, tools, or clothing, you can donate them to those who can still benefit from them.
+And with REKART on the scene, donating has never been easier. Donate all the reusable stuff in just a few clicks.
+
             </p>
           </div>
 
